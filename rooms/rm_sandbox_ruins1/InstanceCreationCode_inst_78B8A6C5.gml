@@ -1,0 +1,1 @@
+floortex = tex_floor_leaves_right_edge

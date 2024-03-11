@@ -1,0 +1,1 @@
+start_image = spr_tex_temracestart_undyne

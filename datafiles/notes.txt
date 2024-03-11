@@ -1,0 +1,126 @@
+
+
+UnderRacer
+
+UnderRacer is a racing game based on the characters and universe of UNDERTALE by Toby Fox. You can choose one of many characters from the game, to race through levels based on the original game design.
+
+
+CONTROLS:
+
+Player 1:
+-W,A,S,D: Turning and Acceleration controls
+-Z: Use Powerup
+-X: Use Special Attack
+-Q: Look Behind
+
+Player 2:
+-I,K,J,L: Turning and Acceleration controls
+-N: Use Powerup
+-M: Use Special Attack
+-U: Look Behind
+
+
+POWERUPS:
+
+-Bone : Spawns three bones that stuns enemies.
+-Spear : Spawns two spears that stuns enemies and knocks back against walls.
+-Spikes : Spawns a spike trap behind the car, that stuns any enemies that go through it.
+-Blue Bone : Spawns a single bone that moves in the direction of the closest racer.
+-Jetpack : Provides a small speed boost, while also increasing max speed for a short time.
+-Gaster Blaster : Aims at the nearest enemy and fires a continuous blast for a short period that, stunning the enemy.
+-Spaghetti : Under the effects of Spaghetti, you can colide with other players to stun them. Use at short range.
+
+
+TIPS:
+
+-Almost all characters have differences set to their karts, depending on the level, a different character might be prefered for your playstyle.
+-Be careful with traps set on the levels, and power ups from other players!
+-Use your special attack as a backup for emergencies, most of them take a long time to reload.
+-Look behind you sometimes to prevent unexpected attacks!
+
+
+TECHNICAL ISSUES:
+
+-If your controller does not work properly in the game, try restarting the game, and make sure the controller is already connected before you start the game again.
+-Any problems with bugs, errors, or if you want to give suggestions, opinions, etc, be sure to contact our team!
+
+-for fan update message @TimeSpaceWarrior
+
+
+CREDITS: All the beautiful people that helped this game come to life!
+
+Toby Fox - For creating Undertale and all of it's beautiful songs and characters. Thank you.
+
+Doktor Luke - Game Creator, Spriter, Game Design, Organization and Ideas, Coding.
+
+Christian Slabbekoorn (TheGravyNator): Spriter, Game Design, Organization and Ideas.
+
+BrawlersInTheZone - Spriter, Textures.
+
+Draexzhan - Spriter, Textures.
+
+Addicted2Electronics - Spriter, Textures.
+
+TheGreatfanBR - Gameplay Suggestions and Ideas.
+
+MIDI Vagrant - Musician, Soundtrack Maker.
+
+TheDonStrife - Soundtrack Contributor.
+
+Nick Koza (TahnokGames.com) - Gamepad Extension.
+
+Midi songs used, made by: MuseScore community, ninsheetmusic community:
+
+- http://forum.ninsheetmusic.org/index.php?topic=7974.0;topicseen
+
+- https://musescore.com/groups/1289351
+
+Samuel Garcia - Undertale Dialog System (Adapted) : http://gamejolt.com/games/underbattle-game-maker-undertale-battle-engine/125676
+
+RickyG - Coder and Undertale Dialog System (Adapted) : http://gamejolt.com/games/undertale-battle-system-engine/145116
+
+Diseased_robot - Sprites and art for the game.
+
+Jimmy The Bassist - Soundtrack Contributor: https://soundcloud.com/jimmythebassist
+
+LucasPucas -  Mad Dummy sprites, Soundtrack Contributor: https://soundcloud.com/ucasucas
+
+Neskau - Spriter, Textures, opinions and suggestions, bug testing.
+
+Seruptor - Playtesting, opinions and suggestions, bug testing.
+
+M.S.T.O.P - Codes and debugging -  Twitter (@QuadolorGames).
+
+Moodyyaser - Codes and debugging.
+
+Crash - Language fixes, Dialogue contributions.
+
+Strider VM - Playtesting, Opinions and Video Production
+
+Brownie - Writer and Story Development.
+
+luigiman0640 - Coding and Level Design
+
+Marshmallow - Coding.
+
+MaskedMurderer999 - Playtesting.
+
+Moik - Spriting.
+
+AiriMuffins - Spriting.
+
+Nina-NintyRobo - Composing, Spriting and Concept Art.
+
+Starman164 - Coding.
+
+UltimateStudios - Composing, Spriting and Concept Art.
+
+Vsou812 - Composing.
+
+TimeSpaceWarrior -  Fan update.
+
+ATTENTION: NO PROFIT HAS BEEN MADE DURING DEVELOPMENT OF THIS GAME, THIS GAME WAS MADE FOR ENTERTAINMENT ONLY.
+
+CC LICENSE:
+-http://creativecommons.org/licenses/by-nc-sa/3.0/
+

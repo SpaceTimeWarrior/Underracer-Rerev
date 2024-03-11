@@ -1,0 +1,1 @@
+campaign_speed_upgrade = 1;

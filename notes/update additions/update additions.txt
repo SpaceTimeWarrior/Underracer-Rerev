@@ -1,0 +1,13 @@
+First unless necessesary I did not change anything
+changelog
+converted to gms1.4 to gms 2.3
+fixed the hacked checker as some changes to gml have occured (room change does not end a script/event)
+fixed 3d overlays to display more than black boxes (gms1 made that fog must be added)
+fixed karts mostly
+adjusted collision to somewhat work.
+added custom karts
+after running the game a folder called ckarts are put in the save file location
+changed save file extension to something more appropriate "Save.determination"
+added support for importing a save file from the old version
+added the ablilty to make custom fonts
+changed joystick to gamepads as gms 1.0+ does not support joysticks anymore

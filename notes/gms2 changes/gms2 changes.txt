@@ -1,0 +1,34 @@
+added spectator floor tiles(these are not included in the find nearest tile so there is prevention from clipping out of bounds or eternally stuck in a wall)
+added dialog fog as compatability for the 3d hud (and added transparency to other textures)
+converted 4 lines to find nearest script
+made multiple seperate texture pages as gms+ all images are normally are combined into one texture page(this caused errors in the walls)
+added custom kart
+added custom kart selector menu
+added custom kart builder script and structs
+added variables to prevent game crashes
+added return values to prevent forced access to the error room or the hacked room every time
+added more compatability scripts for gamepad
+mostly fixed collision
+fixed codewall to allow the player to leave
+added cheat codes to the codewall
+added a flowey rematch to the quickrace that can only be challenged after the campain race (the achevement will be added but the menu will only appear if on the first run)
+changed code so the hacking room does not end the game
+extended gamemaker's compatability scripts such as
+window_get_region_height
+window_get_region_width
+screen_redraw()// also created a object that all objects that have a draw event
+sound_add()//gm's version was literally just created a message saying it is not compatable even though there is a function that does the same thing called audio_create_stream
+
+converted all sounds to .ogg filetype
+changed the main game menu draw event to draw_gui event where possible
+changed the hud font for papyrus,sans and gaster characters to there respective fonts
+added shortcut to the toriel campaign boss race
+added shotrcuts to the flowey rematch boss race
+added the ability to have multiple lapend objects
+added alt+f4 keybinding for leaving the campaingn mode in a emergency
+added statviewer in character select(press z to toggle between preview image and stats and this is not for custom karts)
+added a new save file type save.determination (did include a legacy reader for gm8 save file)
+reworked the paths to adjust the corner speeds on bots.
+created a hardmode ai that uses checpoints to direct it(this ai can use shortcuts the collidable objects that are in do not place are used to prevent too sharp turns)
+
+added gamepad support

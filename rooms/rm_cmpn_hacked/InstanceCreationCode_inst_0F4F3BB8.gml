@@ -1,0 +1,2 @@
+char.direction=90
+
