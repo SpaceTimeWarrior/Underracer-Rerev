@@ -7,7 +7,7 @@ writingx = 16;
 writingy = 348;
 txtsound=snd_text
 writer_msg(
-"* Hey kid! There's a&pretty nice race&right there!")
+scr_dlg_master(30,0))
 }}  
 
 if dialogue>dialoguemax{instance_destroy()}

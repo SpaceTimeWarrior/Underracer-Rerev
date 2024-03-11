@@ -6,7 +6,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*quick, behind that& conveniently shaped lamp.")
+scr_dlg_master(39,0))
 }}
 
 if dialogue=2{
@@ -31,7 +31,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*sup, bro?")
+scr_dlg_master(39,1))
 }}
 
 else{alarm[0]=1}
@@ -53,7 +53,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*YOU KNOW WHAT'S 'SUP',& BROTHER!")
+scr_dlg_master(39,2))
 }}
 
 if dialogue=4{ 
@@ -64,7 +64,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*IT'S BEEN EIGHT DAYS AND& YOU STILL HAVEN'T...")
+scr_dlg_master(39,3))
 }}
 
 if dialogue=5{ 
@@ -75,8 +75,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*RECALIBRATED.&*YOUR.&*PUZZLES!")
-}}
+scr_dlg_master(39,4))}}
 
 if dialogue=6{ 
 dlg=instance_create(x,y,obj_writer);
@@ -86,7 +85,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*YOU JUST PARK AND HANG& AROUND OUTSIDE YOUR& STATION...")
+scr_dlg_master(39,5))
 }}
 
 if dialogue=7{ 
@@ -97,7 +96,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*WHAT ARE YOU EVEN& DOING?!?")
+scr_dlg_master(39,6))
 }}
 
 if dialogue=8{ 
@@ -108,7 +107,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*staring at this lamp.&*it's really cool.&*do you wanna look?")
+scr_dlg_master(39,7))
 }}
 
 if dialogue=9{ 
@@ -119,7 +118,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*NO! I DON'T HAVE TIME& FOR THAT!")
+scr_dlg_master(39,8))
 }}
 
 if dialogue=10{ 
@@ -130,7 +129,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*WHAT IF A RACER COMES& THROUGH HERE!?!")
+scr_dlg_master(39,9))
 }}
 
 if dialogue=11{ 
@@ -141,7 +140,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*I WANT TO BE READY!")
+scr_dlg_master(39,10))
 }}
 
 if dialogue=12{ 
@@ -152,7 +151,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*I WILL BE THE FASTEST!&*I MUST BE THE FASTEST!")
+scr_dlg_master(39,11))
 }}
 
 if dialogue=13{ 
@@ -163,7 +162,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*I WILL BE THE BEST& RACER!")
+scr_dlg_master(39,12))
 }}
 
 if dialogue=14{ 
@@ -174,7 +173,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*THEN I, THE GREAT& PAPYRUS...")
+scr_dlg_master(39,13))
 }}
 
 if dialogue=15{ 
@@ -185,7 +184,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*WILL GET ALL THE& THINGS I UTTERLY DESERVE!")
+scr_dlg_master(39,14))
 }}
 
 if dialogue=16{ 
@@ -196,7 +195,7 @@ spriteface=spr_dlg_papyrus_laugh
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*TROPHIES... MEDALS...")
+scr_dlg_master(39,15))
 }}
 
 if dialogue=17{ 
@@ -207,7 +206,7 @@ spriteface=spr_dlg_papyrus_laugh
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*I WILL FINALLY BE ABLE& TO JOIN THE ROYAL RACERS!")
+scr_dlg_master(39,16))
 }}
 
 if dialogue=18{ 
@@ -218,7 +217,7 @@ spriteface=spr_dlg_papyrus_laugh
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*PEOPLE WILL ASK FOR MY& 'SIGNATURE?'")
+scr_dlg_master(39,17))
 }}
 
 if dialogue=19{ 
@@ -229,7 +228,7 @@ spriteface=spr_dlg_papyrus_laugh
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*I WILL BATHE IN A SHOWER& OF GOLD EVERY MORNING...")
+scr_dlg_master(39,18))
 }}
 
 if dialogue=20{ 
@@ -240,7 +239,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*hmm...")
+scr_dlg_master(39,19))
 }}
 
 if dialogue=21{ 
@@ -251,7 +250,7 @@ spriteface=spr_dlg_sans_chuckle
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*maybe this lamp will& help you.")
+scr_dlg_master(39,20))
 }}
 
 if dialogue=22{ 
@@ -262,7 +261,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*SANS!!&*YOU ARE NOT HELPING!! YOU LAZYBONES!!")
+scr_dlg_master(39,21))
 }}
 
 if dialogue=23{ 
@@ -273,7 +272,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*ALL YOU DO IS SIT AND& BOONDOGGLE!")
+scr_dlg_master(39,22))
 }}
 
 if dialogue=24{ 
@@ -284,7 +283,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*YOU DRIVE SLOWER AND& SLOWER EVERY DAY!!!")
+scr_dlg_master(39,23))
 }}
 
 if dialogue=25{ 
@@ -295,7 +294,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*hey, take it easy.&*cause you're looking& pretty...")
+scr_dlg_master(39,24))
 }}
 
 if dialogue=26{ 
@@ -306,7 +305,7 @@ spriteface=spr_dlg_sans_wink
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*\\Ytire\\W-d.")
+scr_dlg_master(39,25))
 }}
 
 if dialogue=27{ 
@@ -317,7 +316,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*SANS!!!")
+scr_dlg_master(39,26))
 }}
 
 if dialogue=28{ 
@@ -328,7 +327,7 @@ spriteface=spr_dlg_sans_chuckle
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*come on.&*you're smiling.")
+scr_dlg_master(39,27))
 }}
 
 if dialogue=29{ 
@@ -339,7 +338,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*I AM AND I HATE IT!")
+scr_dlg_master(39,28))
 }}
 
 if dialogue=30{ 
@@ -350,7 +349,7 @@ spriteface=spr_dlg_papyrus_side
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*SIGH...")
+scr_dlg_master(39,29))
 }}
 
 if dialogue=31{ 
@@ -361,7 +360,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*WHY DOES SOMEONE AS& GREAT AS ME...")
+scr_dlg_master(39,30))
 }}
 
 if dialogue=32{ 
@@ -372,7 +371,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*HAVE TO DO SO MUCH& JUST TO GET SOME& RECOGNITION...")
+scr_dlg_master(39,31))
 }}
 
 if dialogue=33{ 
@@ -383,7 +382,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*wow, sounds like you've& worked so much, you've...")
+scr_dlg_master(39,32))
 }}
 
 if dialogue=34{ 
@@ -394,7 +393,7 @@ spriteface=spr_dlg_sans_wink
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*\\Yrun outta gas.")
+scr_dlg_master(39,33))
 }}
 
 if dialogue=35{ 
@@ -405,7 +404,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*UGH!!!")
+scr_dlg_master(39,34))
 }}
 
 if dialogue=36{ 
@@ -416,7 +415,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*I WILL ATTEND& TO MY PUZZLES...")
+scr_dlg_master(39,35))
 }}
 
 if dialogue=37{ 
@@ -427,7 +426,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*AS FOR YOUR WORK?")
+scr_dlg_master(39,36))
 }}
 
 if dialogue=38{ 
@@ -438,7 +437,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*KICK INTO...")
+scr_dlg_master(39,37))
 }}
 
 if dialogue=39{ 
@@ -449,7 +448,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"\\W*OVER\\YDRIVE\\W!!!")
+scr_dlg_master(39,38))
 }}
 
 if dialogue=40{ 
@@ -460,7 +459,7 @@ spriteface=spr_dlg_papyrus_laugh
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*NYEHEHEHEHEHEHE& HEHEHEHEHE!!")
+scr_dlg_master(39,39))
 }}
 
 if dialogue=41{ 
@@ -477,7 +476,7 @@ spriteface=spr_dlg_papyrus_laugh
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*...HEH.")
+scr_dlg_master(39,40))
 }}
 else{
 if(obj_kart_papyrus.path_index == -1)
@@ -497,7 +496,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*ok, you can& come out now.")
+scr_dlg_master(39,41))
 }}
 else{
 with obj_kart_papyrus {path_start(pth_cmpn_papexit, obj_kart_papyrus.kart_accel * 20, 0, false)}

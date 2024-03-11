@@ -5,7 +5,7 @@ with dlg
 {
 txtsound=snd_text
 writer_msg(
-"*oh....hi...&*...this door?/")
+scr_dlg_master(36,0))
 }}  
 
 if dialogue=2{ 
@@ -15,7 +15,7 @@ with dlg
 {
 txtsound=snd_text
 writer_msg(
-"*it's a race event.&*...you can participate&by entering the door.../")
+scr_dlg_master(36,1))
 }}  
 
 if dialogue=3{ 
@@ -25,7 +25,7 @@ with dlg
 {
 txtsound=snd_text
 writer_msg(
-"*it's a race against me...&*i hope you don't mind.../")
+scr_dlg_master(36,2))
 }}  
 
 if dialogue>dialoguemax{instance_destroy()}

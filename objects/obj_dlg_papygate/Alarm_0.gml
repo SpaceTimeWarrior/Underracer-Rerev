@@ -7,7 +7,8 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*HA! YOU SEE!&*I WON'T LET YOU&THROUGH THIS GATE!")
+scr_dlg_master(27,0)
+)
 }}  
 
 if dialogue=2{ 
@@ -18,7 +19,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*NOT WITHOUT A RACE!&*NYEH HEH HEH!")
+scr_dlg_master(27,1))
 }}  
 
 if dialogue=3{ 
@@ -29,7 +30,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*PREPARE THYSELF,&FOR RACING TIME!")
+scr_dlg_master(27,2))
 }}  
 
 if dialogue=4{ 

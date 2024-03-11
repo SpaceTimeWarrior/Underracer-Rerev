@@ -6,7 +6,7 @@ spriteface=spr_dlg_papyrus_laugh
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*OH MY DOG...! &*I WON!/")
+scr_dlg_master(29,0))
 }}  
 
 if dialogue=2{ 
@@ -17,7 +17,7 @@ spriteface=spr_dlg_papyrus_side
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*I MEAN, OF COURSE& I WON! I AM SIMPLY&THE BEST!/")
+scr_dlg_master(29,1))
 }}  
 
 if dialogue=3{ 

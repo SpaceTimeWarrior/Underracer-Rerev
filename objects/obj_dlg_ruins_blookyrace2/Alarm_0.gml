@@ -5,7 +5,7 @@ with dlg
 {
 txtsound=snd_text
 writer_msg(
-"*if you want to race...&*no problem....&*just saying.../")
+scr_dlg_master(37,0))
 }}  
 
 if dialogue>dialoguemax{instance_destroy()}

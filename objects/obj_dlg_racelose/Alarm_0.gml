@@ -7,7 +7,7 @@ writingx = 16;
 writingy = 348;
 txtsound=snd_text
 writer_msg(
-"* RACE LOST!&You're gonna have to try a&little bit harder than that!")
+scr_dlg_master(32,0))
 }}  
 
 if dialogue=2{sound_2play(snd_click) instance_create(x,y,obj_hud_black) alarm[2]=7} 

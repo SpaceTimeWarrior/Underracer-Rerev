@@ -7,7 +7,7 @@ writingx = 16;
 writingy = 348;
 txtsound=snd_text
 writer_msg(
-"* RACE WON!&Congratulations!")
+scr_dlg_master(35,0))
 }}  
 
 if dialogue=2{sound_2play(snd_click) instance_create(x,y,obj_hud_black) alarm[2]=7} 

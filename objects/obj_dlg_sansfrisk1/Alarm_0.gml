@@ -6,7 +6,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*actually, hey...")
+scr_dlg_master(38,0))
 }}
 
 if dialogue=2{
@@ -18,7 +18,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*hate to bother ya, but& can you do me a favor?")
+scr_dlg_master(38,1))
 }}
 else{
 if(obj_kart_frisk.direction > 90 && obj_kart_frisk.direction < 270){obj_kart_frisk.direction -= (obj_kart_frisk.kart_turn / 1.25)}
@@ -34,7 +34,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*i was thinking...&*my brother's been kinda& down lately...")
+scr_dlg_master(38,2))
 }}
 
 if dialogue=4{ 
@@ -45,7 +45,7 @@ spriteface=spr_dlg_sans_chuckle
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*he's never seen a human& before.&*and seeing you might just make his day.")
+scr_dlg_master(38,3))
 }}
 
 if dialogue=5{ 
@@ -56,7 +56,7 @@ spriteface=spr_dlg_sans_wink
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*don't worry, he's not& dangerous.")
+scr_dlg_master(38,4))
 }}
 
 if dialogue=6{ 
@@ -67,7 +67,7 @@ spriteface=spr_dlg_sans_chuckle
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*even if he tries to be.")
+scr_dlg_master(38,5))
 }}
 
 if dialogue=7{ 
@@ -78,7 +78,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-"*thanks a million. i'll be up ahead.")
+scr_dlg_master(38,6))
 }}
 
 

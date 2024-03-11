@@ -7,7 +7,7 @@ writingx = 16;
 writingy = 348;
 txtsound=snd_text
 writer_msg(
-"* Yo, you're a kid too,&right? Wanna race?&* Go through here!")
+scr_dlg_master(33,0))
 }}  
 
 if dialogue>dialoguemax{instance_destroy()}

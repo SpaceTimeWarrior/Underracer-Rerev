@@ -6,7 +6,8 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*I...WHAT!? NO!&*I AM ALWAYS &NUMBER ONE!")
+scr_dlg_master(28,0)
+)
 }}  
 
 if dialogue=2{ 
@@ -17,7 +18,7 @@ spriteface=spr_dlg_papyrus_laugh
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*YOU ARE PRETTY&GOOD, HUMAN.&* I GUESS/")
+scr_dlg_master(28,1))
 }}  
 
 if dialogue=3{ 
@@ -28,7 +29,7 @@ spriteface=spr_dlg_papyrus_side
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*GOOD GAME,&GOOD GAME.&*TEN OUTTA TEN.")
+scr_dlg_master(28,2))
 }}  
 
 if dialogue=4{ 
