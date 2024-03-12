@@ -28,12 +28,15 @@ function sound_volume(sindex, vol) {
 	audio_sound_gain( sindex, vol, 0);
 }
 function sound_add(file = "",bgm,preload) {
+	show_debug_message("adding sound")
 	var fle = get_file_details(file);
 	if(fle[1] == "mp3"||fle[1] == "wav"){
 		fle[1] = "ogg";
 		file = fle[2]+"."+fle[1];
 	}
+	show_debug_message("recieved file type")
 	var ible = audio_create_stream(file);
+	show_debug_message("created stream");
 	return ible;
 }
 function get_file_details(file){

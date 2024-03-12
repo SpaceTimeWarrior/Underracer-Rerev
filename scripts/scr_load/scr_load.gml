@@ -27,7 +27,9 @@ function scr_load_data() {
 		reg = "US";	
 	}
 	language = language + "_" + reg;
+	show_debug_message("language set:"+language);
 	scr_load_karts();
+	show_debug_message("karts loaded")
 	//Campaign
 	if(file_exists("Save.determination")){
 		ini_open("Save.determination")//load new filetype
@@ -94,6 +96,7 @@ function scr_load_data() {
 		campaign_tires_r = ini_read_real("Campaign","spider tires",0);
 		sndnunlk = ini_read_real("Campaign","snowdin unlock",false);
 		ini_close();
+		show_debug_message("game loaded")
 	}else if file_exists("save.ini"){
 	file=file_text_open_read("save.ini")//load old filetype
 	global.gold=file_text_read_real(file)  
@@ -337,6 +340,7 @@ function scr_load_data() {
 	file_text_readln(file) 
 	global.papybridgecutscene=file_text_read_real(file) 
 	file_text_close(file)
+	show_debug_message("game loaded")
 	}
 	else
 	{
@@ -376,6 +380,7 @@ function scr_load_data() {
 	global.battle_mk=false
 	global.unlock_papybossrace=false
 	global.papybridgecutscene=false
+	show_debug_message("game initialized")
 	}
 
 	//Controls
@@ -442,6 +447,7 @@ function scr_load_data() {
 	file_text_readln(file) 
 	global.control_pl2cam_jk=file_text_read_real(file)  
 	file_text_close(file)
+	show_debug_message("controlls loaded")
 	}
 	else
 	{
@@ -478,6 +484,7 @@ function scr_load_data() {
 	global.control_pl2use_jk=1
 	global.control_pl2special_jk=2
 	global.control_pl2cam_jk=4
+	show_debug_message("controls setup")
 	}
 
 
@@ -506,15 +513,18 @@ function scr_load_karts(){
 	globalvar cspr;
 	cspr = sprite_duplicate(0);
 	sprite_delete(cspr);
+	if(os_type!=os_linux){
 	globalvar custom_karts;
 	var ckart = "ckart/"
+	show_debug_message("start making karts")
 	ini_open(ckart+"custom_karts.ini");
 	var kart_number = ini_read_real("Main","karts",1);
 	ini_write_real("Main","karts",kart_number);
 	custom_karts = array_create(1)
 	for(var iiii = 0; iiii<kart_number;iiii++){
-		custom_karts[iiii] = new karts()
+		custom_karts[iiii] = new karts()// this can be replaced by creating a custom instance in create
 		custom_karts[iiii].char = ini_read_string("Main","Name_"+string(iiii),"Test_kart"+string(iiii));
+		show_debug_message("new kart:"+custom_karts[iiii].char);
 		var kname = custom_karts[iiii].char
 		ini_write_string("Main","Name_"+string(iiii),kname);
 		custom_karts[iiii].kart_maxspd = ini_read_real(kname,"spd",1);
@@ -523,6 +533,7 @@ function scr_load_karts(){
 		ini_write_real(kname,"accel",custom_karts[iiii].kart_accel);
 		custom_karts[iiii].kart_turn=ini_read_real(kname,"turn",custom_karts[iiii].kart_turn);
 		ini_write_real(kname,"turn",custom_karts[iiii].kart_turn);
+		show_debug_message("kart stats made")
 		var sprs = ini_read_string(kname,"right","./"+ckart+"friskr"+string(iiii)+".png");
 		var sprf = ini_read_real(kname,"rightf",1);
 		ini_write_string(kname,"right",sprs);
@@ -603,31 +614,46 @@ function scr_load_karts(){
 		if(custom_karts[iiii].selector==-1){
 			copy_sprite_to_file(spr_slct_asriel,sprs)	
 		}
+		show_debug_message("kart base sprites loaded")
 		custom_karts[iiii].kart_width=ini_read_real(kname,"width",5);
 		ini_write_real(kname,"width",custom_karts[iiii].kart_width);
 		custom_karts[iiii].kart_height=ini_read_real(kname,"height",10);
 		ini_write_real(kname,"height",custom_karts[iiii].kart_height);
 		custom_karts[iiii].kart_bottom=ini_read_real(kname,"bottom",0);
 		ini_write_real(kname,"bottom",custom_karts[iiii].kart_bottom);
+		show_debug_message("kart height and width made")
+		if(os_type == os_linux){
+			show_debug_message("no sound for linux");
+		}else{
 		var fl = ini_read_string(kname,"stuns","./"+ckart+kname+"stun.ogg");
+		show_debug_message("stun<")
 		custom_karts[iiii].kart_stun = sound_add(fl,false,false);
+		show_debug_message("stun>")
 		if(custom_karts[iiii].kart_stun == -1){
+			show_debug_message("file copy")
 			file_copy("custom_kart_source\\snd_slct_asriel.ogg",fl);
+			show_debug_message("file copy successful")
 			custom_karts[iiii].kart_stun = sound_add(fl,false,false);
 		}
+		show_debug_message("stun?")
 		ini_write_string(kname,"stuns",fl)
+		show_debug_message("stun sound loaded")
 		var fl = ini_read_string(kname,"impact","./"+ckart+kname+"impact.ogg");
 		custom_karts[iiii].kart_impact = sound_add(fl,false,false);
 		if(custom_karts[iiii].kart_impact == -1){
 			file_copy("custom_kart_source\\snd_hit.ogg",fl);
 			custom_karts[iiii].kart_impact = sound_add(fl,false,false);
 		}
+		show_debug_message("impact sound loaded")
 		ini_write_string(kname,"impact",fl)
 		var fl = ini_read_string(kname,"power","./"+ckart+kname+"power.ogg");
 		custom_karts[iiii].kart_power = sound_add(fl,false,false);
 		if(custom_karts[iiii].kart_power == -1){
 			file_copy("custom_kart_source\\power_asriel.ogg",fl);
 			custom_karts[iiii].kart_power = sound_add(fl,false,false);
+		}
+		show_debug_message("power sound loaded")
+		show_debug_message("kart sounds loaded")
 		}
 		custom_karts[iiii].kart_ab = ini_read_string(kname,"ability_type", "Calories")
 		ini_write_string(kname,"ability_type",custom_karts[iiii].kart_ab);
@@ -640,6 +666,7 @@ function scr_load_karts(){
 		custom_karts[iiii].kart_ab3 = ini_read_real(kname,"ability_arg_3",false);
 		ini_write_real(kname,"ability_arg_3",custom_karts[iiii].kart_ab3)
 		ini_write_string(kname,"power",fl);
+		show_debug_message("loaded kart ability")
 		if(custom_karts[iiii].mdlspr_right = -1){
 			custom_karts[iiii].mdlspr_right = spr_kfrisk_r
 		}
@@ -667,8 +694,10 @@ function scr_load_karts(){
 		if(custom_karts[iiii].selector = -1){
 			custom_karts[iiii].selector = spr_slct_asriel
 		}
+		show_debug_message("Kart made")
 	}
 	ini_close();
+	}
 }
 function kart_sprite(sprite_down = spr_kfrisk_d,sprite_right = spr_kfrisk_r,sprite_left = spr_kfrisk_l,sprite_up = spr_kfrisk_u,sprite_stun = spr_kfrisk_stun,sprite_victory = spr_kfrisk_victory,sprite_defeat = spr_kfrisk_defeat,sprite_look = spr_kfrisk_lookd,sprite_sel = spr_slct_asriel)constructor{
 	down = sprite_down;
