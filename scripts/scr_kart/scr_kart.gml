@@ -399,6 +399,12 @@ function scr_kartsettings_create() {
 	fallen = 0;
 	if(!variable_instance_exists(id,"kart_maxspd")){
 		kart_maxspd = 10;
+		kart_accel = 1;
+		mdlspr_right = 0;
+		mdlspr_left = 0;
+		mdlspr_down = 0;
+		mdlspr_up = 0;
+		scr_kartsettings_create()
 	}
 	stun=false
 	friction=0.1
@@ -480,13 +486,7 @@ function scr_kartsettings_create() {
 		id.botpath = path_add();
 	}
 	}catch(_e){
-		kart_maxspd = 10;
-		kart_accel = 1;
-		mdlspr_right = 0;
-		mdlspr_left = 0;
-		mdlspr_down = 0;
-		mdlspr_up = 0;
-		scr_kartsettings_create()
+		
 	}
 
 
