@@ -20,7 +20,7 @@ function __init_global() {
 	exception_unhandled_handler(function(ex){determined_error(ex)});
 }
 function determined_error(ex){
-		/*show_debug_message(string(ex));
+		show_debug_message(string(ex));
 	    if(show_question("Your Determination is too strong it destroyed the world.\n do you want to create a error report file")){
 			var dt = date_current_datetime()
 			var fname = "error"+string(date_get_year(dt))+"-"+string(date_get_month(dt))+"-"+string(date_get_day(dt))+"-"
@@ -30,5 +30,5 @@ function determined_error(ex){
 			ini_close();
 			show_message(filename_path(fname)+fname)
 		}
-	    return 0;*/
+	    return 0;
 	}
