@@ -19,8 +19,8 @@ if(setup == false && initialized == true){
 	if(kartab == "Fire Circle"){
 		firespin=custom_karts[kart_id].kart_ab0;
 		fireatk=custom_karts[kart_id].kart_ab1;
-		firespin2=custom_karts[kart_id].kart_ab1;
-		fireatk2=custom_karts[kart_id].kart_ab1;
+		firespin2=custom_karts[kart_id].kart_ab2;
+		fireatk2=custom_karts[kart_id].kart_ab3;
 	}
 	//scr_kartsettings_create()
 	//scr_kartalarm_0()

@@ -1,3 +1,3 @@
-if (os_type == os_linux){
+/*if (os_type == os_linux){
 	instance_destroy()	
 }

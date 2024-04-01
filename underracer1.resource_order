@@ -411,6 +411,7 @@
     {"name":"spr_tem_victory","order":9,"path":"sprites/spr_tem_victory/spr_tem_victory.yy",},
     {"name":"spr_hfrisk_r","order":4,"path":"sprites/spr_hfrisk_r/spr_hfrisk_r.yy",},
     {"name":"spr_tem_defeat","order":11,"path":"sprites/spr_tem_defeat/spr_tem_defeat.yy",},
+    {"name":"custom karts","order":6,"path":"notes/custom karts/custom karts.yy",},
     {"name":"spr_tem_lookd","order":13,"path":"sprites/spr_tem_lookd/spr_tem_lookd.yy",},
     {"name":"spr_tem_stun","order":15,"path":"sprites/spr_tem_stun/spr_tem_stun.yy",},
     {"name":"spr_kgrill_d","order":1,"path":"sprites/spr_kgrill_d/spr_kgrill_d.yy",},

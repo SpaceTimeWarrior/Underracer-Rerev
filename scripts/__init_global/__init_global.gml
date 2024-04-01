@@ -20,6 +20,8 @@ function __init_global() {
 	exception_unhandled_handler(function(ex){determined_error(ex)});
 }
 function determined_error(ex){
+		global.unlock_dog=true;
+		scr_save_data();
 		show_debug_message(string(ex));
 	    if(show_question("Your Determination is too strong it destroyed the world.\n do you want to create a error report file")){
 			var dt = date_current_datetime()
