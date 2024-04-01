@@ -8,3 +8,5 @@ the original fan game can be found here: https://gamejolt.com/games/underracer/1
 the original github repository can be found here: https://github.com/TheGravyNator/UnderRacer
 
 wiki for this game https://github.com/SpaceTimeWarrior/Underracer-Rerev/wiki
+
+original game it is based on [undertale](https://undertale.com/) / [steam](https://store.steampowered.com/app/391540/Undertale/)
