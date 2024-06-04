@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_dlg_master(dlgt=0,dlg2 = 0){
 	switch(language){
 		//add language codes here US english and default is below on how it is structured
@@ -290,41 +288,41 @@ function scr_dlg_master(dlgt=0,dlg2 = 0){
 			break;
 			case 26://obj_dlg_papybridge_completed
 				if(dlg2 = 0){
-					return "*NYEH! YOU MANIAC!&*YOU FIGURED IT OUT!";
-				}else if(dlg2 = 1){
-					return "*WELL, DON'T THINK I'M&NOT PREPARED FOR YOUR&NEXT MOVE, HUMAN!";
-				}else{
+					return "*NYEH! YOU MANIAC!&*YOU FIGURED IT OUT!"
+				}else if (dlg2 = 1){
+					return "*WELL, DON'T THINK I'M&NOT PREPARED FOR YOUR&NEXT MOVE, HUMAN!"
+				}else if (dlg2 = 2){
 					return "*NYEH HEH HEH!"
 				}
 			break;
 			case 27://obj_dlg_papygate
-			if(dlg2 =0){
-				return "*HA! YOU SEE!&*I WON'T LET YOU&THROUGH THIS GATE!"
-			}else if(dlg2 = 1){
-				return "*NOT WITHOUT A RACE!&*NYEH HEH HEH!"
-			}else if(dlg2 = 2){
-				return "*PREPARE THYSELF,&FOR RACING TIME!"
-			}
+				if(dlg2 = 0){
+					return "*HA! YOU SEE!&*I WON'T LET YOU&THROUGH THIS GATE!"
+				}else if(dlg2 = 1){
+					return "*NOT WITHOUT A RACE!&*NYEH HEH HEH!"
+				}else if(dlg2 = 2){
+					return "*PREPARE THYSELF,&FOR RACING TIME!"
+				}
 			break;
 			case 28://obj_dlg_papyloses
-			if(dlg2 = 0){
-				return "*I...WHAT!? NO!&*I AM ALWAYS &NUMBER ONE!"
-			}else if(dlg2 = 1){
-				return "*YOU ARE PRETTY&GOOD, HUMAN.&* I GUESS/";
-			}else if(dlg2 = 2){
-				return "*GOOD GAME,&GOOD GAME.&*TEN OUTTA TEN."
-			}else{
-				return "*You obtained 200G.";
-			}
+				if(dlg2 = 0){
+					return "*I...WHAT!? NO!&*I AM ALWAYS &NUMBER ONE!"
+				}else if(dlg2 = 1){
+					return "*YOU ARE PRETTY&GOOD, HUMAN.&* I GUESS/"
+				}else if(dlg2 = 2){
+					return "*GOOD GAME,&GOOD GAME.&*TEN OUTTA TEN."
+				}else if(dlg2 = 3){
+					return "*You obtained 200G."
+				}
 			break;
 			case 29://obj_dlg_papywins
-			if(dlg2 = 0){
-				return "*OH MY DOG...! &*I WON!/"
-			}else if(dlg2 = 1){
-				return "*I MEAN, OF COURSE& I WON! I AM SIMPLY&THE BEST!/"
-			}else if(dlg2 = 2){
-				return "*BETTER LUCK NEXT&TIME, HUMAN!/"
-			}
+				if(dlg = 0){
+					return "*OH MY DOG...! &*I WON!/"	
+				}else if (dlg = 1){
+					return "*I MEAN, OF COURSE& I WON! I AM SIMPLY&THE BEST!/"
+				}else if (dlg = 2){
+					return "*BETTER LUCK NEXT&TIME, HUMAN!/"
+				}
 			break;
 			case 30://obj_dlg_raceahead
 				return "* Hey kid! There's a&pretty nice race&right there!"
@@ -347,9 +345,9 @@ function scr_dlg_master(dlgt=0,dlg2 = 0){
 			case 36://obj_dlg_ruins_blookyrace1
 				if(dlg2 == 0){
 					return "*oh....hi...&*...this door?/"
-				}else if(dlg2 =1){
+				}else if(dlg2 == 1){
 					return "*it's a race event.&*...you can participate&by entering the door.../"
-				}else if(dlg2 = 2){
+				}else if(dlg2 == 2){
 					return "*it's a race against me...&*i hope you don't mind.../"
 				}
 			break;
@@ -357,106 +355,106 @@ function scr_dlg_master(dlgt=0,dlg2 = 0){
 				return "*if you want to race...&*no problem....&*just saying.../"
 			break;
 			case 38://obj_dlg_sansfrisk1
-				if(dlg2 = 0){
+				if(dlg2 == 0){
 					return "*actually, hey..."
-				}else if(dlg2 = 1){
+				}else if(dlg2 == 1){
 					return "*hate to bother ya, but& can you do me a favor?"
-				}else if(dlg2 = 2){
+				}else if(dlg2 == 2){
 					return "*i was thinking...&*my brother's been kinda& down lately..."
-				}else if(dlg2 = 3){
+				}else if(dlg2 == 3){
 					return "*he's never seen a human& before.&*and seeing you might just make his day."
-				}else if(dlg2 = 4){
+				}else if(dlg2 == 4){
 					return "*don't worry, he's not& dangerous."
-				}else if(dlg2 = 5){
+				}else if(dlg2 == 5){
 					return "*even if he tries to be."
-				}else if(dlg2 = 6){
+				}else if(dlg2 == 6){
 					return "*thanks a million. i'll be up ahead."
 				}
 			break;
 			case 39://obj_dlg_sanspap1
-				if(dlg2 = 0){
+				if(dlg2 == 0){
 					return "*quick, behind that& conveniently shaped lamp."
-				}else if(dlg2 = 1){
+				}else if(dlg2==1){
 					return "*sup, bro?"
-				}else if(dlg2 = 2){
+				}else if(dlg2 == 2){
 					return "*YOU KNOW WHAT'S 'SUP',& BROTHER!"
-				}else if(dlg2 = 3){
+				}else if(dlg2 == 3){
 					return "*IT'S BEEN EIGHT DAYS AND& YOU STILL HAVEN'T..."
-				}else if(dlg2 = 4){
+				}else if(dlg2 == 4){
 					return "*RECALIBRATED.&*YOUR.&*PUZZLES!"
-				}else if(dlg2 = 5){
+				}else if(dlg2 == 5){
 					return "*YOU JUST PARK AND HANG& AROUND OUTSIDE YOUR& STATION..."
-				}else if(dlg2 = 6){
+				}else if(dlg2 == 6){
 					return "*WHAT ARE YOU EVEN& DOING?!?"
-				}else if(dlg2 = 7){
+				}else if(dlg2 == 7){
 					return "*staring at this lamp.&*it's really cool.&*do you wanna look?"
-				}else if(dlg2 = 8){
+				}else if(dlg2 == 8){
 					return "*NO! I DON'T HAVE TIME& FOR THAT!"
-				}else if(dlg2 = 9){
+				}else if(dlg2 == 9){
 					return "*WHAT IF A RACER COMES& THROUGH HERE!?!"
-				}else if(dlg2 = 10){
+				}else if(dlg2 == 10){
 					return "*I WANT TO BE READY!"
-				}else if(dlg2 = 11){
+				}else if(dlg2== 11){
 					return "*I WILL BE THE FASTEST!&*I MUST BE THE FASTEST!"
-				}else if(dlg2 = 12){
+				}else if(dlg2 == 12){
 					return "*I WILL BE THE BEST& RACER!"
-				}else if(dlg2 = 13){
+				}else if(dlg2 == 13){
 					return "*THEN I, THE GREAT& PAPYRUS..."
-				}else if(dlg2 = 14){
+				}else if(dlg2 == 14){
 					return "*WILL GET ALL THE& THINGS I UTTERLY DESERVE!"
-				}else if(dlg2 = 15){
+				}else if(dlg2 == 15){
 					return "*TROPHIES... MEDALS..."
-				}else if(dlg2 = 16){
+				}else if(dlg2 == 16){
 					return "*I WILL FINALLY BE ABLE& TO JOIN THE ROYAL RACERS!"
-				}else if(dlg2 = 17){
+				}else if(dlg2 == 17){
 					return "*PEOPLE WILL ASK FOR MY& 'SIGNATURE?'"
-				}else if(dlg2 = 18){
+				}else if(dlg2 == 18){
 					return "*I WILL BATHE IN A SHOWER& OF GOLD EVERY MORNING..."
-				}else if(dlg2 = 19){
+				}else if(dlg2 == 19){
 					return "*hmm..."
-				}else if(dlg2 = 20){
+				}else if(dlg2 == 20){
 					return "*maybe this lamp will& help you."
-				}else if(dlg2 = 21){
+				}else if(dlg2 == 21){
 					return "*SANS!!&*YOU ARE NOT HELPING!! YOU LAZYBONES!!"
-				}else if(dlg2 = 22){
+				}else if(dlg2 == 22){
 					return "*ALL YOU DO IS SIT AND& BOONDOGGLE!"
-				}else if(dlg2 = 23){
+				}else if(dlg2 == 23){
 					return "*YOU DRIVE SLOWER AND& SLOWER EVERY DAY!!!"
-				}else if(dlg2 = 24){
+				}else if(dlg2 == 24){
 					return "*hey, take it easy.&*cause you're looking& pretty..."
-				}else if(dlg2 = 25){
+				}else if(dlg2 == 25){
 					return "*\\Ytire\\W-d."
-				}else if(dlg2 = 26){
+				}else if(dlg2 == 26){
 					return "*SANS!!!"
-				}else if(dlg2 = 27){
+				}else if(dlg2 == 27){
 					return "*come on.&*you're smiling."
-				}else if(dlg2 = 28){
+				}else if(dlg2 == 28){
 					return "*I AM AND I HATE IT!"
-				}else if(dlg2 = 29){
+				}else if(dlg2 == 29){
 					return "*SIGH..."
-				}else if(dlg2 = 30){
+				}else if(dlg2 == 30){
 					return "*WHY DOES SOMEONE AS& GREAT AS ME..."
-				}else if(dlg2 = 31){
+				}else if(dlg2 == 31){
 					return "*HAVE TO DO SO MUCH& JUST TO GET SOME& RECOGNITION..."
-				}else if(dlg2 = 32){
+				}else if(dlg2 == 32){
 					return "*wow, sounds like you've& worked so much, you've..."
-				}else if(dlg2 = 33){
+				}else if(dlg2 == 33){
 					return "*\\Yrun outta gas."
-				}else if(dlg2 = 34){
+				}else if(dlg2 == 34){
 					return "*UGH!!!"
-				}else if(dlg2 = 35){
+				}else if(dlg2 == 35){
 					return "*I WILL ATTEND& TO MY PUZZLES..."
-				}else if(dlg2 = 36){
+				}else if(dlg2 == 36){
 					return "*AS FOR YOUR WORK?"
-				}else if(dlg2 = 37){
+				}else if(dlg2 == 37){
 					return "*KICK INTO..."
-				}else if(dlg2 = 38){
+				}else if(dlg2 == 38){
 					return "\\W*OVER\\YDRIVE\\W!!!"
-				}else if(dlg2 = 39){
+				}else if(dlg2 == 39){
 					return "*NYEHEHEHEHEHEHE& HEHEHEHEHE!!"
-				}else if(dlg2 = 40){
+				}else if(dlg2 == 40){
 					return "*...HEH."
-				}else if(dlg2 = 41){
+				}else if(dlg2 == 41){
 					return "*ok, you can& come out now."
 				}
 			break;
@@ -644,7 +642,7 @@ function scr_dlg_master(dlgt=0,dlg2 = 0){
 					return "*Ribbit!&*(But it's like no one&understands what i say!)/";
 				}
 			break;
-			case 58://obj_dlg_shop_ruins
+			case 58:
 			  if(dlg2 ==0){
 				 return "Shop closed maybe try after beating \\BTORIEL\\W." 
 			  }

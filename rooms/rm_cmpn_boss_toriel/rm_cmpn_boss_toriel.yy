@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_cmpn_boss_toriel",
-  "creationCodeFile": "${project_dir}/rooms/rm_cmpn_boss_toriel/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_cmpn_boss_toriel/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

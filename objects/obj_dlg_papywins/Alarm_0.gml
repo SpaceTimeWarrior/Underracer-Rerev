@@ -28,7 +28,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-"*BETTER LUCK NEXT&TIME, HUMAN!/")
+scr_dlg_master(29,2))
 }}  
 
 if dialogue=4{sound_2play(snd_click) instance_create(x,y,obj_hud_black) alarm[2]=7} 

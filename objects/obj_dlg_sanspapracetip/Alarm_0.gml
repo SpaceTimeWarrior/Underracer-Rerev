@@ -19,7 +19,7 @@ spriteface=spr_dlg_sans_normal
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-scr_dlg_master(41,1))
+scr_dlg_master(40,1))
 }}  
 
 if dialogue=3{ 

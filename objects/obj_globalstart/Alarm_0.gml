@@ -1,4 +1,3 @@
-show_debug_message("alarm called")
 var __b__;
 __b__ = action_if_variable(global.startroom, "Spoiler", 0);
 if __b__{

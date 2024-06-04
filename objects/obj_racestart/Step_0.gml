@@ -24,6 +24,7 @@ if global.level="Undyne Boss1"{global.lvlsong=global.snd_waterfall}
 if global.level="CORE"{global.lvlsong=global.snd_core}
 
 if global.level="Sans Rally"{global.lvlsong=global.snd_sans}
+if global.level="frSans Rally"{global.lvlsong=global.snd_sans}
 
 if global.level="Snowdin Battle"{global.lvlsong=global.snd_snowdincircuit}
 

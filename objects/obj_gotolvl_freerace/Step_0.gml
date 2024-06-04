@@ -73,4 +73,10 @@ if __b__
 action_another_room(rm_cmpn_ud_sprint1);
 }
 }
-
+__b__ = action_if_variable(global.level, "Sans Rally", 0);
+if __b__
+{
+{
+action_another_room(rm_lvl_mk);
+}
+}

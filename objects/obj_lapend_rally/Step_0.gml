@@ -9,3 +9,6 @@ scr_timetoname(global.player6_id,global.player6_char)
 
 if position>6{position=0}
 
+if global.level == "frSans Rally"{
+	global.gamemode = "Rally"	
+}

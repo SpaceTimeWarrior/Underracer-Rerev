@@ -6,16 +6,12 @@ campaign_speed_upgrade = 1;
 globalvar UR_cap;
 UR_cap = "UnderRacer:Rereved"
 window_set_caption(UR_cap)
-show_debug_message("bootup successful")
 scr_load_fonts()
-show_debug_message("font load successful")
 scr_load_sounds()
-show_debug_message("sound load successful")
 scr_load_data()
-show_debug_message("data loaded")
 
 gamepad_init()
-show_debug_message("gamepad is set up")
+
 //Global Variables
 global.camx=0
 global.camy=0
@@ -118,10 +114,8 @@ global.winner3=0
 global.winner4=0
 global.winner5=0
 global.winner6=0
-show_debug_message("globals created")
+
 terrain_create(spr_hm_snowrally,128,58);
-show_debug_message("terrain generated")
 d3d_end();
 
 action_set_alarm(5, 0);
-show_debug_message("set alarm")

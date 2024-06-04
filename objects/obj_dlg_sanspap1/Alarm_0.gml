@@ -75,7 +75,8 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-scr_dlg_master(39,4))}}
+scr_dlg_master(39,4))
+}}
 
 if dialogue=6{ 
 dlg=instance_create(x,y,obj_writer);
@@ -305,8 +306,7 @@ spriteface=spr_dlg_sans_wink
 txtsound=snd_talk_sans
 myfont=fnt_sans
 writer_msg(
-scr_dlg_master(39,25))
-}}
+scr_dlg_master(39,25))}}
 
 if dialogue=27{ 
 dlg=instance_create(x,y,obj_writer);

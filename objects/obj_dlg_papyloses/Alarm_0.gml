@@ -6,8 +6,7 @@ spriteface=spr_dlg_papyrus_mad
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-scr_dlg_master(28,0)
-)
+scr_dlg_master(28,0))
 }}  
 
 if dialogue=2{ 
@@ -40,7 +39,7 @@ writingx = 16;
 writingy = 348;
 txtsound=snd_text
 writer_msg(
-"*You obtained 200G.")
+scr_dlg_master(28,3))
 }}  
 
 if dialogue=5{sound_2play(snd_click) instance_create(x,y,obj_hud_black) alarm[2]=7} 

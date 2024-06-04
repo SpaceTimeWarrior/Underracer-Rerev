@@ -6,8 +6,7 @@ if instance_exists(target){
 x=target.x + lengthdir_x(Len, Angle + direction)
 y=target.y + lengthdir_y(Len, Angle + direction)
 if global.gamemode!="Rally"{
-if global.gamemode!="Campaign Rally"{
-if z>1{z=target.z}}}
+if global.gamemode!="Campaign Rally"{if z>1{z=target.z}}}
 speed=target.speed
 friction=target.friction
 direction=target.direction+adddir
@@ -29,7 +28,10 @@ if hudcreate=false{
 if global.gamemode="Race"{hud=instance_create(x,y,obj_hud1) hudcreate=true}
 if global.gamemode="Campaign"{hud=instance_create(x,y,obj_hud_campaign) target=obj_kart_frisk hudcreate=true}
 if global.gamemode="Campaign Rally"{hud=instance_create(x,y,obj_hud_campaign) target=obj_kart_frisk hudcreate=true}
-if global.gamemode="Rally"{hud=instance_create(x,y,obj_hud_campaign) hudcreate=true}
+if global.gamemode="Rally"{hud=instance_create(x,y,obj_hud1) hudcreate=true}
+if global.players=2{
+	obj_cam2.hud=instance_create(x,y,obj_hud2)
+}
 }
 if(characterval == 0){
 	if global.gamemode="Campaign"{global.char1="Frisk" global.char1_obj=obj_kart_frisk}

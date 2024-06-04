@@ -7,10 +7,9 @@ if ability_timer<100{ability="None"}
 if ability_timer>=100{ability_timer=100 ability="Spear Fear"}
 
 if ability_trigger=true and ability_timer<100{ability_trigger=false}
-
+//show_debug_message("undyne x:"+string(x)+" Y"+string(y)+" z"+string(z))
 if ability_trigger=true{
 if ability_timer=100{
-
 pu2=instance_create(x,y,obj_powerup_tilespear)
 pu2.direction=direction-2
 pu2.speed=-6

@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "underracer1",
-    "path": "underracer1.yyp",
+    "name": "dialogue",
+    "path": "folders/Objects/do not place/dialogue.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

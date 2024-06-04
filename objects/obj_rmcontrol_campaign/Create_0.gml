@@ -35,6 +35,11 @@ ambient_r=global.lighting_quantity
 ambient_g=global.lighting_quantity
 ambient_b=global.lighting_quantity 
 
+if global.gamemode =="Rally"{
+	action_create_object(obj_escbutton_3d, x, y);
+}else{
 action_create_object(obj_escbutton_3dcampaign, x, y);
-action_create_object(obj_achievement_tracker, x, y);
 action_create_object(obj_hud_pause, x, y);
+}
+action_create_object(obj_achievement_tracker, x, y);
+

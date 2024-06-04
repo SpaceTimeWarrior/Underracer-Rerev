@@ -19,8 +19,9 @@ function scr_drawhud(player=1) {
 	}
 	var time_data = array_create(0,array_create(2,""));
 	time_data[0][0]=string(global.char1);
-	time_data[1][0]="Speed: "+string(target.speed)
+	if(instance_exists(target)){
 	try{
+	time_data[1][0]="Speed: "+string(target.speed)
 	if global.cmpn_showraceinfo=false{
 	time_data[2][0]=("Lap: "+string(target.lap))}
 	if global.cmpn_showraceinfo=true{
@@ -42,13 +43,28 @@ function scr_drawhud(player=1) {
 	time_data[4][1]=draw_get_font();
 	time_data[5][1]=draw_get_font();
 	var width=get_largest_string_from_array(time_data)
-	draw_sprite_stretched_ext(spr_hud_box,-1,0,0,16+width+16,110,c_white,1);
+	draw_sprite_stretched_ext(spr_hud_box,-1,0,0,16+width+16,130,c_white,1);
 	//First Text Drawn outside this script, Check object
 	draw_text(12,6,string_hash_to_newline(string(global.char1)))
-	draw_text(12,6+16,string_hash_to_newline("Speed: "+string(target.speed)))
+	draw_text(12,6+16,string_hash_to_newline("Speed: "))
+	
+	var col1 = c_lime
+	var col2 = c_green
+	if global.char1 == "Frisk"{col1 = c_yellow;col2 = c_yellow}
+	draw_healthbar(12+string_width("Speed: "),6+16,60+string_width("Speed: "),6+24,(abs(target.speed)/target.kart_maxspd)*100,c_black,col2,col1,0,false,true)
 	draw_text(12,6+32,string_hash_to_newline("Lap: "+string(target.lap)+" / "+string(global.lap_limit)))
 	draw_text(12,6+48,string_hash_to_newline("Player : "+string(target.player)))
-	draw_text(12,6+64,string_hash_to_newline("Magic : "+string(round(target.ability_timer))+" %"))
+	
+	col1 = c_aqua
+	col2 = make_color_rgb(206,255,228)
+	if global.char1 == "Frisk"||global.char1 == "Chara"||global.char1 == "Hacker Frisk"||global.char1 == "StoryShift Chara"{
+		col1 = c_red;
+		col2 = c_maroon;
+		draw_text(12,6+64,string_hash_to_newline("Deter.: "))
+	}else{
+		draw_text(12,6+64,string_hash_to_newline("Magic : "))
+	}
+	draw_healthbar(12+string_width("Magic : "),6+64,60+string_width("Magic : "),6+72,target.ability_timer,c_black,col2,col1,0,false,true)
 	draw_text(12,6+80,string_hash_to_newline("Attack : "+string(target.ability)))
 	show_debug_message("race data")
 	show_debug_message("Speed: "+string(target.speed));
@@ -56,8 +72,8 @@ function scr_drawhud(player=1) {
 	show_debug_message("Player : "+string(target.player));
 	show_debug_message("Magic : "+string(round(target.ability_timer))+" %");
 	show_debug_message("Attack : "+string(target.ability));
-	//draw_text(12,12+96,"Position: "+string(target.race_position))
-	/*if showpos=true{
+	draw_text(12,12+96,"Position: "+string(target.race_position+1))
+	if showpos=true{
 	draw_sprite_ext(spr_hud_positions,-1,450,0,2,2,0,c_white,1)
 	draw_text(462,12   ,"Position 1: "+string(global.position_1_name))
 	draw_text(462,12+16,"Position 2: "+string(global.position_2_name))
@@ -65,7 +81,7 @@ function scr_drawhud(player=1) {
 	draw_text(462,12+48,"Position 4: "+string(global.position_4_name))
 	draw_text(462,12+64,"Position 5: "+string(global.position_5_name))
 	draw_text(462,12+80,"Position 6: "+string(global.position_6_name))
-	}*/
+	}
 	//HUD Powerup Box
 	draw_sprite_stretched_ext(spr_hud_box,-1,0,432,144,48,c_white,1)
 	draw_sprite_ext(sprite_powerup,-1,8,432+8,1,1,0,c_white,1)
@@ -92,12 +108,12 @@ function scr_drawhud(player=1) {
 	//d3d_set_hidden(true);
 	//d3d_set_lighting(global.lighting);
 	}
-
+	}
 	if global.players=2{
 	//d3d_set_lighting(true);
 	//d3d_set_projection_ortho(0,0,640,240,0)
 	//d3d_set_hidden(false);
-	draw_set_color(c_red)
+	//draw_set_color(c_red)
 	draw_set_font(fnt_hud);
 	var time_data = array_create(0,array_create(2,""));
 	if(player ==1){
@@ -125,21 +141,36 @@ function scr_drawhud(player=1) {
 	time_data[4][1]=draw_get_font();
 	time_data[5][1]=draw_get_font();
 	var width=get_largest_string_from_array(time_data)
-	draw_sprite_stretched_ext(spr_hud_box,-1,0,0,16+width+16,110,c_white,1);
+	draw_sprite_stretched_ext(spr_hud_box,-1,0,0,16+width+16,130,c_white,1);
 	//First Text Drawn outside this script, Check object
 	draw_text(12,6,string_hash_to_newline(string(global.char1)))
-	draw_text(12,6+16,string_hash_to_newline("Speed: "+string(target.speed)))
-	draw_text(12,6+32,string_hash_to_newline("Lap: "+string(target.lap)))
+	draw_text(12,6+16,string_hash_to_newline("Speed: "))
+	
+	var col1 = c_lime
+	var col2 = c_green
+	if global.char1 == "Frisk"{col1 = c_yellow;col2 = c_yellow}
+	draw_healthbar(12+string_width("Speed: "),6+16,60+string_width("Speed: "),6+24,(abs(target.speed)/target.kart_maxspd)*100,c_black,col2,col1,0,false,true)
+	draw_text(12,6+32,string_hash_to_newline("Lap: "+string(target.lap)+" / "+string(global.lap_limit)))
 	draw_text(12,6+48,string_hash_to_newline("Player : "+string(target.player)))
-	draw_text(12,6+64,string_hash_to_newline("Magic : "+string(round(target.ability_timer))+" %"))
+	
+	col1 = c_aqua
+	col2 = make_color_rgb(206,255,228)
+	if global.char1 == "Frisk"||global.char1 == "Chara"||global.char1 == "Hacker Frisk"||global.char1 == "StoryShift Chara"{
+		col1 = c_red;
+		col2 = c_maroon;
+		draw_text(12,6+64,string_hash_to_newline("Deter.: "))
+	}else{
+		draw_text(12,6+64,string_hash_to_newline("Magic : "))
+	}
+	draw_healthbar(12+string_width("Magic : "),6+64,60+string_width("Magic : "),6+72,target.ability_timer,c_black,col2,col1,0,false,true)
 	draw_text(12,6+80,string_hash_to_newline("Attack : "+string(target.ability)))
-	//show_debug_message("race data")
-	//show_debug_message("Speed: "+string(target.speed));
-	//show_debug_message("Lap: "+string(target.lap)+" / "+string(global.lap_limit));
-	//show_debug_message("Player : "+string(target.player));
-	//show_debug_message("Magic : "+string(round(target.ability_timer))+" %");
-	//show_debug_message("Attack : "+string(target.ability));
-	draw_text(12,12+96,"Position: "+string(target.race_position))
+	show_debug_message("race data")
+	show_debug_message("Speed: "+string(target.speed));
+	show_debug_message("Lap: "+string(target.lap)+" / "+string(global.lap_limit));
+	show_debug_message("Player : "+string(target.player));
+	show_debug_message("Magic : "+string(round(target.ability_timer))+" %");
+	show_debug_message("Attack : "+string(target.ability));
+	draw_text(12,12+96,"Position: "+string(target.race_position+1))
 	/*if showpos=true{
 	draw_sprite_ext(spr_hud_positions,-1,450,0,2,2,0,c_white,1)
 	draw_text(462,12   ,"Position 1: "+string(global.position_1_name))
@@ -203,13 +234,28 @@ function scr_drawhud(player=1) {
 	time_data[5][1]=draw_get_font();
 	var width=get_largest_string_from_array(time_data)
 	var ht = display_get_gui_height()/2
-	draw_sprite_stretched_ext(spr_hud_box,-1,0,ht,16+width+16,110,c_white,1);
+	draw_sprite_stretched_ext(spr_hud_box,-1,0,ht,16+width+16,130,c_white,1);
 	//First Text Drawn outside this script, Check object
 	draw_text(12,ht+6,string_hash_to_newline(string(global.char2)))
-	draw_text(12,ht+6+16,string_hash_to_newline("Speed: "+string(target.speed)))
-	draw_text(12,ht+6+32,string_hash_to_newline("Lap: "+string(target.lap)))
+	draw_text(12,ht+6+16,string_hash_to_newline("Speed: "))
+	
+	var col1 = c_lime
+	var col2 = c_green
+	if global.char2 == "Frisk"{col1 = c_yellow;col2 = c_yellow}
+	draw_healthbar(12+string_width("Speed: "),ht+6+16,60+string_width("Speed: "),ht+6+24,(abs(target.speed)/target.kart_maxspd)*100,c_black,col2,col1,0,false,true)
+	draw_text(12,ht+6+32,string_hash_to_newline("Lap: "+string(target.lap)+" / "+string(global.lap_limit)))
 	draw_text(12,ht+6+48,string_hash_to_newline("Player : "+string(target.player)))
-	draw_text(12,ht+6+64,string_hash_to_newline("Magic : "+string(round(target.ability_timer))+" %"))
+	
+	col1 = c_aqua
+	col2 = make_color_rgb(206,255,228)
+	if global.char2 == "Frisk"||global.char2 == "Chara"||global.char2 == "Hacker Frisk"||global.char2 == "StoryShift Chara"{
+		col1 = c_red;
+		col2 = c_maroon;
+		draw_text(12,ht+6+64,string_hash_to_newline("Deter.: "))
+	}else{
+		draw_text(12,ht+6+64,string_hash_to_newline("Magic : "))
+	}
+	draw_healthbar(12+string_width("Magic : "),ht+6+64,60+string_width("Magic : "),ht+6+72,target.ability_timer,c_black,col2,col1,0,false,true)
 	draw_text(12,ht+6+80,string_hash_to_newline("Attack : "+string(target.ability)))
 	show_debug_message("race data")
 	show_debug_message("Speed: "+string(target.speed));
@@ -217,6 +263,7 @@ function scr_drawhud(player=1) {
 	show_debug_message("Player : "+string(target.player));
 	show_debug_message("Magic : "+string(round(target.ability_timer))+" %");
 	show_debug_message("Attack : "+string(target.ability));
+	draw_text(12,ht+6+96,"Position: "+string(target.race_position+1))
 	//draw_text(12,12+96,"Position: "+string(target.race_position))
 	/*if showpos=true{
 	draw_sprite_ext(spr_hud_positions,-1,450,0,2,2,0,c_white,1)
@@ -259,11 +306,12 @@ function scr_drawhud(player=1) {
 	//d3d_set_hidden(true);
 	//d3d_set_lighting(global.lighting);
 	}
-
+	
 
 
 }
 function scr_hudstep() {
+	if instance_exists(target){
 	if is_string(target.powerup){
 		switch(target.powerup){
 		//this sets the powerup sprite
@@ -277,5 +325,6 @@ function scr_hudstep() {
 		case "Jetpack":{sprite_powerup=spr_powerup_jetpack;break;}
 		default:{sprite_powerup=spr_powerup_none;break;}
 		}
+	}
 	}
 }

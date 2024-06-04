@@ -15,6 +15,7 @@ if global.gamemode="Campaign"||global.gamemode="Campaign Rally"{
 		}
 	}
 }
+//show_debug_message("frisk x:"+string(x)+" Y"+string(y)+" z"+string(z))
 scr_kartsettings()
 if(skin == "hacker frisk"){
 	if stuntimer=25{sound_2play(snd_slct_flowey) stuntimer=24}

@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_lvl_hotlands",
-  "creationCodeFile": "${project_dir}/rooms/rm_lvl_hotlands/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_lvl_hotlands/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

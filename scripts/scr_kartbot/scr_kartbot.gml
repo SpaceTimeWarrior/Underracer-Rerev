@@ -48,12 +48,12 @@ function scr_kartbot2(char = 0) {
 		for(var t = 0; t<instance_number(obj_path_checkpoint);t++){
 			inst = instance_find(obj_path_checkpoint,t);
 			if(inst.pat = bot_path_pat-1&& bot == true){
-				if(fallen > 10){
+				/*if(fallen > 10){
 					x = inst.x;
 					y = inst.y;
 					direction = inst.direction;
 					fallen = 0;
-				}
+				}*/
 			}
 			if(inst.pat = bot_path_pat){
 				

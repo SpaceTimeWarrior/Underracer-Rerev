@@ -7,6 +7,10 @@ if(global.char1_obj = obj_kart_custom){
 	char.initialized = true;
 	char.final_sprite = custom_karts[charc1].mdlspr_down
 }
+if (char.char =="Chara"||char.char == "Asriel"){
+	var lay_id = layer_get_id("Effect_1");
+	layer_set_visible(lay_id,true)
+}
 char.direction+=direction
 char.player+=1
 char.speed+=global.start_speed

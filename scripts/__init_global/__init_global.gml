@@ -16,12 +16,18 @@ function __init_global() {
 	globalvar asriel_unlk;
 	asriel_unlk = false;
 	globalvar cv;
+	var cc = sprite_duplicate(0)-1;
+	sprite_delete(cc+1);//gets the total number of sprites
+	globalvar cspr;
+	cspr = cc
+	globalvar custom_spr;
+	custom_spr = array_create(0,0)
+	sprite_delete(cspr);
+	show_debug_message(cc)
 	cv = false;
 	exception_unhandled_handler(function(ex){determined_error(ex)});
 }
 function determined_error(ex){
-		global.unlock_dog=true;
-		scr_save_data();
 		show_debug_message(string(ex));
 	    if(show_question("Your Determination is too strong it destroyed the world.\n do you want to create a error report file")){
 			var dt = date_current_datetime()

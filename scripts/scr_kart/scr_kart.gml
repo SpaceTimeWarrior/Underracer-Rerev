@@ -9,17 +9,46 @@ function scr_kartalarm_0() {
 	}
 
 	if bot=true&&hardmode!=true{
-	if global.level="Ruins"{botpath=choose(pth_ruins1,pth_ruins2)}
-	if global.level="CORE"{botpath=choose(pth_core1,pth_core2)}
-	if global.level="Snowdin Forest"{botpath=choose(pth_snowdinforest1,pth_snowdinforest2)}
-	if global.level="Waterfall"{botpath=choose(pth_waterfall1,pth_waterfall2)}
-	if global.level="Blook Boss"{botpath=pth_cmpn_blookbattle}
-	if global.level="Toriel Boss"{botpath=pth_cmpn_torielbattle}
-	if global.level="Ruins Battle"{botpath=pth_cmpn_ruinsmobbattle}
-	if global.level="Sans Rally"{botpath=choose(pth_snowdrakerally1)}
-	if global.level="Snowdin Battle"{botpath=choose(pth_snowmobbattle1,pth_snowmobbattle2)}
-	if global.level="Christmas"{botpath=choose(pth_christmas1,pth_christmas2)}
-	if global.level="Papyrus Boss"{botpath=choose(pth_snowmobbattle1,pth_snowmobbattle2)}
+		switch(global.level){
+		case "Ruins":
+			botpath=choose(pth_ruins1,pth_ruins2)
+			break;
+		case "CORE":
+			botpath=choose(pth_core1,pth_core2)
+			break;
+		case "Snowdin Forest":
+			botpath=choose(pth_snowdinforest1,pth_snowdinforest2)
+			break;
+		case "Waterfall":
+			botpath=choose(pth_waterfall1,pth_waterfall2)
+			break;
+		case "Blook Boss":
+			botpath=pth_cmpn_blookbattle
+			break;
+		case "Toriel Boss":
+			botpath=pth_cmpn_torielbattle
+			break;
+		case "Ruins Battle":
+			botpath=pth_cmpn_ruinsmobbattle
+			break
+		case "Sans Rally":
+		case "frSans Rally":
+			botpath=choose(pth_snowdrakerally1)
+			break;
+		case "Snowdin Battle":
+			botpath=choose(pth_snowmobbattle1,pth_snowmobbattle2)
+			break
+		case "Christmas":
+			botpath=choose(pth_christmas1,pth_christmas2)
+			break
+		case "Papyrus Boss":
+			botpath=choose(pth_snowmobbattle1,pth_snowmobbattle2)
+			break
+		case "rm_cmpn_ud_sprint1":
+			botpath = pth_und_sprint1
+			break
+		}
+	
 	}
 
 
@@ -284,7 +313,26 @@ function scr_kartsettings() {
 	if race_position=6{x=obj_podium_pos6.x y=obj_podium_pos6.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_6_name=char}
 	}
 	}
-
+	if(global.gamemode="Rally"){
+		global.racewon=true
+	if global.chars=2{
+	if race_position=1{x=obj_podium_pos1.x y=obj_podium_pos1.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=12 change_sprite=true global.position_1_name=char}
+	if race_position=2{x=obj_podium_pos2.x y=obj_podium_pos2.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat} image_speed=0.25 z=8  change_sprite=true global.position_2_name=char}
+	}
+	if global.chars=3{
+	if race_position=1{x=obj_podium_pos1.x y=obj_podium_pos1.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=12 change_sprite=true global.position_1_name=char}
+	if race_position=2{x=obj_podium_pos2.x y=obj_podium_pos2.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=8 change_sprite=true global.position_2_name=char}
+	if race_position=3{x=obj_podium_pos3.x y=obj_podium_pos3.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat} image_speed=0.25 z=8  change_sprite=true global.position_3_name=char}
+	}
+	if global.chars>3{
+	if race_position=1{x=obj_podium_pos1.x y=obj_podium_pos1.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=12 change_sprite=true global.position_1_name=char}
+	if race_position=2{x=obj_podium_pos2.x y=obj_podium_pos2.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=8  change_sprite=true global.position_2_name=char}
+	if race_position=3{x=obj_podium_pos3.x y=obj_podium_pos3.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_victory} image_speed=0.25 z=8  change_sprite=true global.position_3_name=char}
+	if race_position=4{x=obj_podium_pos4.x y=obj_podium_pos4.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_4_name=char}
+	if race_position=5{x=obj_podium_pos5.x y=obj_podium_pos5.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_5_name=char}
+	if race_position=6{x=obj_podium_pos6.x y=obj_podium_pos6.y speed=0 direction=0 path_speed=0 if change_sprite=false{final_sprite=mdlspr_defeat}  image_speed=0.25 z=0  change_sprite=true global.position_6_name=char}
+	}
+	}
 	}
 
 	strafetimer-=1
@@ -297,37 +345,37 @@ function scr_kartsettings() {
 
 	if bot=false{
 	if speed!=0{
-	if drifting=true{fx=instance_create(x,y,obj_racefx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+	if drifting=true{fx=instance_create(x,y,obj_racefx); fx.target=id; fx.direction=direction; fx.speed=speed/1.15; fx.friction=0.1; fx.z = z}
 	if collision_point(x,y,obj_floor_vines_ruins,1,1) 
 	or collision_point(x,y,obj_floor_leaves_ruins,1,1) 
 	or collision_point(x,y,obj_floor_wfall_grass,1,1)
-	{fx=instance_create(x,y,obj_grassfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+	{fx=instance_create(x,y,obj_grassfx); fx.target=id; fx.direction=direction; fx.speed=speed/1.15; fx.friction=0.1; fx.z = z}
 	if collision_point(x,y,obj_floor_snowdin,1,1) 
 	or collision_point(x,y,obj_floor_snow,1,1) 
 	or collision_point(x,y,obj_floor_ice,1,1) 
-	{fx=instance_create(x,y,obj_snowfloorfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+	{fx=instance_create(x,y,obj_snowfloorfx); fx.target=id; fx.direction=direction; fx.speed=speed/1.15; fx.friction=0.1;fx.z = z}
 	if collision_point(x,y,obj_floor_wfall_waterfloor,1,1) 
 	or collision_point(x,y,obj_floor_ruins_waterfloor,1,1) 
-	{fx=instance_create(x,y,obj_waterfloorfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
-	if global.gamemode="Rally"{fx=instance_create(x,y,obj_racefx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
-	if global.gamemode="Campaign Rally"{fx=instance_create(x,y,obj_racefx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+	{fx=instance_create(x,y,obj_waterfloorfx); fx.target=id; fx.direction=direction; fx.speed=speed/1.15; fx.friction=0.1; fx.z = z}
+	if global.gamemode="Rally"{fx=instance_create(x,y,obj_racefx); fx.target=id; fx.direction=direction; fx.speed=speed/1.15; fx.friction=0.1; fx.z = z}
+	if global.gamemode="Campaign Rally"{fx=instance_create(x,y,obj_racefx); fx.target=id; fx.direction=direction; fx.speed=speed/1.15; fx.friction=0.1; fx.z = z}
 	fx_timer=40
 	}}
 
 	if bot=true{
 	if path_speed!=0{
-	if drifting=true{fx=instance_create(x,y,obj_racefx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+	if drifting=true{fx=instance_create(x,y,obj_racefx); fx.target=id; fx.direction=direction; fx.speed=speed/1.15; fx.friction=0.1; fx.z = z}
 	if collision_point(x,y,obj_floor_vines_ruins,1,1) 
 	or collision_point(x,y,obj_floor_leaves_ruins,1,1) 
 	or collision_point(x,y,obj_floor_wfall_grass,1,1)
-	{fx=instance_create(x,y,obj_grassfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+	{fx=instance_create(x,y,obj_grassfx); fx.target=id; fx.direction=direction; fx.speed=speed/1.15; fx.friction=0.1; fx.z = z}
 	if collision_point(x,y,obj_floor_snowdin,1,1) 
 	or collision_point(x,y,obj_floor_snow,1,1) 
 	or collision_point(x,y,obj_floor_ice,1,1) 
-	{fx=instance_create(x,y,obj_snowfloorfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+	{fx=instance_create(x,y,obj_snowfloorfx); fx.target=id; fx.direction=direction; fx.speed=speed/1.15; fx.friction=0.1; fx.z = z}
 	if collision_point(x,y,obj_floor_wfall_waterfloor,1,1) 
 	or collision_point(x,y,obj_floor_ruins_waterfloor,1,1) 
-	{fx=instance_create(x,y,obj_waterfloorfx) fx.target=id fx.direction=direction fx.speed=speed/1.15 fx.friction=0.1}
+	{fx=instance_create(x,y,obj_waterfloorfx); fx.target=id; fx.direction=direction; fx.speed=speed/1.15; fx.friction=0.1; fx.z = z}
 	fx_timer=40
 	}}
 	}
@@ -371,16 +419,18 @@ function scr_kartsettings() {
 	}}}}}
 
 	if global.gamemode="Rally"{
+	if lap<=global.lap_limit{
 	z=terrain_get_z(x,y)-64
 	if z>12-64{kart_accel=kart_accel_half kart_maxspd=kart_maxspd_half}
 	if z<12-64{kart_accel=kart_accel_old kart_maxspd=kart_maxspd_old}
-	}
+	}}
 
 	if global.gamemode="Campaign Rally"{
+	if lap<=global.lap_limit{
 	z=terrain_get_z(x,y)-64
 	if z>12-64{kart_accel=kart_accel_half kart_maxspd=kart_maxspd_half}
 	if z<12-64{kart_accel=kart_accel_old kart_maxspd=kart_maxspd_old}
-	}
+	}}
 
 	if global.racewon=true and stun=true{stuntimer=-1 stun=false}
 
@@ -399,12 +449,6 @@ function scr_kartsettings_create() {
 	fallen = 0;
 	if(!variable_instance_exists(id,"kart_maxspd")){
 		kart_maxspd = 10;
-		kart_accel = 1;
-		mdlspr_right = 0;
-		mdlspr_left = 0;
-		mdlspr_down = 0;
-		mdlspr_up = 0;
-		scr_kartsettings_create()
 	}
 	stun=false
 	friction=0.1
@@ -486,7 +530,13 @@ function scr_kartsettings_create() {
 		id.botpath = path_add();
 	}
 	}catch(_e){
-		
+		kart_maxspd = 10;
+		kart_accel = 1;
+		mdlspr_right = 0;
+		mdlspr_left = 0;
+		mdlspr_down = 0;
+		mdlspr_up = 0;
+		scr_kartsettings_create()
 	}
 
 

@@ -17,8 +17,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "master_parent",
-    "path": "objects/master_parent/master_parent.yy",
+    "name": "obj_lapend",
+    "path": "objects/obj_lapend/obj_lapend.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

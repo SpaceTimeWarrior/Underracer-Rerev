@@ -27,9 +27,7 @@ function scr_load_data() {
 		reg = "US";	
 	}
 	language = language + "_" + reg;
-	show_debug_message("language set:"+language);
 	scr_load_karts();
-	show_debug_message("karts loaded")
 	//Campaign
 	if(file_exists("Save.determination")){
 		ini_open("Save.determination")//load new filetype
@@ -51,6 +49,9 @@ function scr_load_data() {
 		}
 		global.cmpn_times=ini_read_real("Campaign","times",0);// How many times campaign was completed
 		global.cmpn_floweyintro=ini_read_real("Campaign","flowey_intro",0); 
+		if(global.cmpn_floweyintro == false){
+			global.cmpn_room = rm_cmpgn_tutorial1
+		}
 		global.battle_froggitduo=ini_read_real("Campaign","froggit",0);  
 		global.battle_vegeduo=ini_read_real("Campaign","vegeduo",0); 
 		global.battle_vegefrog=ini_read_real("Campaign","Froglegs_and_carrots",0);  
@@ -95,8 +96,8 @@ function scr_load_data() {
 		campaign_undyne_waterpump = ini_read_real("Campaign","undyne_water",0);
 		campaign_tires_r = ini_read_real("Campaign","spider tires",0);
 		sndnunlk = ini_read_real("Campaign","snowdin unlock",false);
+		
 		ini_close();
-		show_debug_message("game loaded")
 	}else if file_exists("save.ini"){
 	file=file_text_open_read("save.ini")//load old filetype
 	global.gold=file_text_read_real(file)  
@@ -340,7 +341,6 @@ function scr_load_data() {
 	file_text_readln(file) 
 	global.papybridgecutscene=file_text_read_real(file) 
 	file_text_close(file)
-	show_debug_message("game loaded")
 	}
 	else
 	{
@@ -380,7 +380,6 @@ function scr_load_data() {
 	global.battle_mk=false
 	global.unlock_papybossrace=false
 	global.papybridgecutscene=false
-	show_debug_message("game initialized")
 	}
 
 	//Controls
@@ -447,7 +446,6 @@ function scr_load_data() {
 	file_text_readln(file) 
 	global.control_pl2cam_jk=file_text_read_real(file)  
 	file_text_close(file)
-	show_debug_message("controlls loaded")
 	}
 	else
 	{
@@ -484,7 +482,6 @@ function scr_load_data() {
 	global.control_pl2use_jk=1
 	global.control_pl2special_jk=2
 	global.control_pl2cam_jk=4
-	show_debug_message("controls setup")
 	}
 
 
@@ -503,36 +500,26 @@ function scr_load_karts(){
 	enemy_speed_multiplier = 1;
 	player_speed_multiplier = 1;
 	try{
-		if(variable_global_exists("cspr")){
-			var cc = sprite_duplicate(1);
-			sprite_delete(cc);//gets the total number of sprites
-			
-				while(cc >cspr){//if the total sorites is greater than the preexisting sprites
-					sprite_delete(cc-1);
-					cc--;
-				}
-			
+	if(variable_global_exists("cspr")){
+		while(array_length(custom_spr)>0){
+			var cc = array_pop(custom_spr)
+			if cc !=-1&&cc>777{
+				sprite_delete(cc)
+			}
 		}
-	}catch(e){
-		
 	}
-	
-	globalvar cspr;
-	cspr = sprite_duplicate(0);
-	show_debug_message(string(cspr)+"first custom index");
-	sprite_delete(cspr);
-	if(os_type!=/*os_linux*/-1){
+	}catch(e){
+		show_debug_message(string(e))
+	}
 	globalvar custom_karts;
 	var ckart = "ckart/"
-	show_debug_message("start making karts")
 	ini_open(ckart+"custom_karts.ini");
 	var kart_number = ini_read_real("Main","karts",1);
 	ini_write_real("Main","karts",kart_number);
 	custom_karts = array_create(1)
 	for(var iiii = 0; iiii<kart_number;iiii++){
-		custom_karts[iiii] = new karts()// this can be replaced by creating a custom instance in create
+		custom_karts[iiii] = new karts()
 		custom_karts[iiii].char = ini_read_string("Main","Name_"+string(iiii),"Test_kart"+string(iiii));
-		show_debug_message("new kart:"+custom_karts[iiii].char);
 		var kname = custom_karts[iiii].char
 		ini_write_string("Main","Name_"+string(iiii),kname);
 		custom_karts[iiii].kart_maxspd = ini_read_real(kname,"spd",1);
@@ -541,228 +528,120 @@ function scr_load_karts(){
 		ini_write_real(kname,"accel",custom_karts[iiii].kart_accel);
 		custom_karts[iiii].kart_turn=ini_read_real(kname,"turn",custom_karts[iiii].kart_turn);
 		ini_write_real(kname,"turn",custom_karts[iiii].kart_turn);
-		show_debug_message("kart stats made")
 		var sprs = ini_read_string(kname,"right","./"+ckart+"friskr"+string(iiii)+".png");
 		var sprf = ini_read_real(kname,"rightf",1);
-		show_debug_message("right frames ")
 		ini_write_string(kname,"right",sprs);
 		ini_write_real(kname,"rightf",sprf);
-		try{
 		custom_karts[iiii].mdlspr_right=sprite_add(sprs,sprf,false,false,0,0);
-		}catch(e){
-			show_debug_message(e);
-		}
-		show_debug_message("right image")
+		array_push(custom_spr,custom_karts[iiii].mdlspr_right)
 		if(custom_karts[iiii].mdlspr_right==-1){
 			copy_sprite_to_file(spr_kfrisk_r,sprs)	
-			show_debug_message("right copy")
-			var sprs = ini_read_string(kname,"right","./"+ckart+"friskr"+string(iiii)+".png");
-			var sprf = ini_read_real(kname,"rightf",1);
-			show_debug_message("right frames ")
-			ini_write_string(kname,"right",sprs);
-			ini_write_real(kname,"rightf",sprf);
-			try{
-			custom_karts[iiii].mdlspr_right=sprite_add(sprs,sprf,false,false,0,0);
-			}catch(e){
-				show_debug_message(e);
-			}
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_right,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
-		show_debug_message("right colision")
 		var sprs = ini_read_string(kname,"left","./"+ckart+"friskl"+string(iiii)+".png");
 		var sprf = ini_read_real(kname,"leftf",1);
-		show_debug_message("left frames ")
 		ini_write_string(kname,"left",sprs);
 		ini_write_real(kname,"leftf",sprf);
 		custom_karts[iiii].mdlspr_left=sprite_add(sprs,sprf,false,false,0,0);
-		show_debug_message("left image")
+		array_push(custom_spr,custom_karts[iiii].mdlspr_left)
 		if(custom_karts[iiii].mdlspr_left==-1){
 			copy_sprite_to_file(spr_kfrisk_l,sprs)	
-			show_debug_message("left copy")
-			var sprs = ini_read_string(kname,"left","./"+ckart+"friskl"+string(iiii)+".png");
-			var sprf = ini_read_real(kname,"leftf",1);
-			show_debug_message("left frames ")
-			ini_write_string(kname,"left",sprs);
-			ini_write_real(kname,"leftf",sprf);
-			custom_karts[iiii].mdlspr_left=sprite_add(sprs,sprf,false,false,0,0);
-			show_debug_message("left image")
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_left,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
-		show_debug_message("left colision")
 		var sprs = ini_read_string(kname,"down","./"+ckart+"friskd"+string(iiii)+".png");
-		var sprf = ini_read_real(kname,"downf",3);
+		var sprf = ini_read_real(kname,"downf",1);
 		ini_write_string(kname,"down",sprs);
 		ini_write_real(kname,"downf",sprf);
-		show_debug_message("down frames ")
 		custom_karts[iiii].mdlspr_down=sprite_add(sprs,sprf,false,false,0,0);
-		show_debug_message("down image")
+		array_push(custom_spr,custom_karts[iiii].mdlspr_down)
 		if(custom_karts[iiii].mdlspr_down==-1){
 			copy_sprite_to_file(spr_kfrisk_d,sprs)	
-			show_debug_message("down copy")
-			var sprs = ini_read_string(kname,"down","./"+ckart+"friskd"+string(iiii)+".png");
-			var sprf = ini_read_real(kname,"downf",1);
-			ini_write_string(kname,"down",sprs);
-			ini_write_real(kname,"downf",sprf);
-			show_debug_message("down frames ")
-			custom_karts[iiii].mdlspr_down=sprite_add(sprs,sprf,false,false,0,0);
-			show_debug_message("down image")
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_down,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
-		show_debug_message("down colision")
 		var sprs = ini_read_string(kname,"up","./"+ckart+"frisku"+string(iiii)+".png");
 		var sprf = ini_read_real(kname,"upf",1);
 		ini_write_string(kname,"up",sprs);
 		ini_write_real(kname,"upf",sprf);
-		show_debug_message("up frames")
 		custom_karts[iiii].mdlspr_up=sprite_add(sprs,sprf,false,false,0,0);
-		show_debug_message("up image")
+		array_push(custom_spr,custom_karts[iiii].mdlspr_up)
 		if(custom_karts[iiii].mdlspr_up==-1){
 			copy_sprite_to_file(spr_kfrisk_u,sprs)	
-			show_debug_message("up copy")
-			var sprs = ini_read_string(kname,"up","./"+ckart+"frisku"+string(iiii)+".png");
-			var sprf = ini_read_real(kname,"upf",1);
-			ini_write_string(kname,"up",sprs);
-			ini_write_real(kname,"upf",sprf);
-			show_debug_message("up frames")
-			custom_karts[iiii].mdlspr_up=sprite_add(sprs,sprf,false,false,0,0);
-			show_debug_message("up image")
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_up,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
-		show_debug_message("up colision")
 		var sprs = ini_read_string(kname,"stun","./"+ckart+"frisks"+string(iiii)+".png");
 		var sprf = ini_read_real(kname,"stunf",4);
 		ini_write_string(kname,"stun",sprs);
 		ini_write_real(kname,"stunf",sprf);
-		show_debug_message("stun frames ")
 		custom_karts[iiii].mdlspr_stun=sprite_add(sprs,sprf,false,false,0,0);
-		show_debug_message("stun image")
+		array_push(custom_spr,custom_karts[iiii].mdlspr_stun)
 		if(custom_karts[iiii].mdlspr_stun==-1){
 			copy_sprite_to_file(spr_kfrisk_stun,sprs)	
-			show_debug_message("stun copy")
-			var sprs = ini_read_string(kname,"stun","./"+ckart+"frisks"+string(iiii)+".png");
-			var sprf = ini_read_real(kname,"stunf",4);
-			ini_write_string(kname,"stun",sprs);
-			ini_write_real(kname,"stunf",sprf);
-			show_debug_message("stun frames ")
-			custom_karts[iiii].mdlspr_stun=sprite_add(sprs,sprf,false,false,0,0);
-			show_debug_message("stun image")
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_stun,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
-		show_debug_message("stun colision ")
 		var sprs = ini_read_string(kname,"victory","./"+ckart+"friskv"+string(iiii)+".png");
 		var sprf = ini_read_real(kname,"victoryf",5);
 		ini_write_string(kname,"victory",sprs);
 		ini_write_real(kname,"victoryf",sprf);
-		show_debug_message("victory frames")
 		custom_karts[iiii].mdlspr_victory=sprite_add(sprs,sprf,false,false,0,0);
-		show_debug_message("victory image ")
+		array_push(custom_spr,custom_karts[iiii].mdlspr_victory)
 		if(custom_karts[iiii].mdlspr_victory==-1){
 			copy_sprite_to_file(spr_kfrisk_victory,sprs)	
-			show_debug_message("victory copy")
-			var sprs = ini_read_string(kname,"victory","./"+ckart+"friskv"+string(iiii)+".png");
-			var sprf = ini_read_real(kname,"victoryf",5);
-			ini_write_string(kname,"victory",sprs);
-			ini_write_real(kname,"victoryf",sprf);
-			show_debug_message("victory frames")
-			custom_karts[iiii].mdlspr_victory=sprite_add(sprs,sprf,false,false,0,0);
-			show_debug_message("victory image ")
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_victory,true, 0,0, 0,0, 0, bboxkind_precise, 0)
-		show_debug_message("victory colision")
 		var sprs = ini_read_string(kname,"defeat","./"+ckart+"friskdef"+string(iiii)+".png");
 		var sprf = ini_read_real(kname,"defeatf",12);
 		ini_write_string(kname,"defeat",sprs);
 		ini_write_real(kname,"defeatf",sprf);
-		show_debug_message("defeat frames ")
 		custom_karts[iiii].mdlspr_defeat=sprite_add(sprs,sprf,false,false,0,0);
-		show_debug_message("defeat image")
+		array_push(custom_spr,custom_karts[iiii].mdlspr_defeat)
 		if(custom_karts[iiii].mdlspr_defeat==-1){
-			copy_sprite_to_file(spr_kfrisk_defeat,sprs)
-			show_debug_message("defeat copy")
-			var sprs = ini_read_string(kname,"defeat","./"+ckart+"friskdef"+string(iiii)+".png");
-			var sprf = ini_read_real(kname,"defeatf",12);
-			ini_write_string(kname,"defeat",sprs);
-			ini_write_real(kname,"defeatf",sprf);
-			show_debug_message("defeat frames ")
-			custom_karts[iiii].mdlspr_defeat=sprite_add(sprs,sprf,false,false,0,0);
-			show_debug_message("defeat image")
+			copy_sprite_to_file(spr_kfrisk_defeat,sprs)	
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_defeat,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
-		show_debug_message("defeat colision")
 		var sprs = ini_read_string(kname,"look","./"+ckart+"frisklkd"+string(iiii)+".png");
-		var sprf = ini_read_real(kname,"lookf",3);
+		var sprf = ini_read_real(kname,"lookf",1);
 		ini_write_string(kname,"look",sprs);
 		ini_write_real(kname,"lookf",sprf);
-		show_debug_message("backup frames ")
 		custom_karts[iiii].mdlspr_down_look=sprite_add(sprs,sprf,false,false,0,0);
-		show_debug_message("backup image")
+		array_push(custom_spr,custom_karts[iiii].mdlspr_down_look)
 		if(custom_karts[iiii].mdlspr_down_look==-1){
 			copy_sprite_to_file(spr_kfrisk_lookd,sprs)	
-			show_debug_message("backup copy")
-			var sprs = ini_read_string(kname,"look","./"+ckart+"frisklkd"+string(iiii)+".png");
-			var sprf = ini_read_real(kname,"lookf",1);
-			ini_write_string(kname,"look",sprs);
-			ini_write_real(kname,"lookf",sprf);
-			show_debug_message("backup frames ")
-			custom_karts[iiii].mdlspr_down_look=sprite_add(sprs,sprf,false,false,0,0);
-			show_debug_message("backup image")
 		}
-		
 		sprite_collision_mask(custom_karts[iiii].mdlspr_down_look,true, 0,0, 0,0, 0, bboxkind_precise, 0)
-		show_debug_message("backup collision")
 		var sprs = ini_read_string(kname,"select","./"+ckart+"asrielsel"+string(iiii)+".png");
 		var sprf = ini_read_real(kname,"selectf",2);
 		ini_write_string(kname,"select",sprs);
 		ini_write_real(kname,"selectf",sprf);
 		custom_karts[iiii].selector = sprite_add(sprs,sprf,false,false,0,0);
+		array_push(custom_spr,custom_karts[iiii].selector)
 		if(custom_karts[iiii].selector==-1){
 			copy_sprite_to_file(spr_slct_asriel,sprs)	
-			var sprs = ini_read_string(kname,"select","./"+ckart+"asrielsel"+string(iiii)+".png");
-			var sprf = ini_read_real(kname,"selectf",2);
-			ini_write_string(kname,"select",sprs);
-			ini_write_real(kname,"selectf",sprf);
-			custom_karts[iiii].selector = sprite_add(sprs,sprf,false,false,0,0);
 		}
-		show_debug_message("kart base sprites loaded")
 		custom_karts[iiii].kart_width=ini_read_real(kname,"width",5);
 		ini_write_real(kname,"width",custom_karts[iiii].kart_width);
 		custom_karts[iiii].kart_height=ini_read_real(kname,"height",10);
 		ini_write_real(kname,"height",custom_karts[iiii].kart_height);
 		custom_karts[iiii].kart_bottom=ini_read_real(kname,"bottom",0);
 		ini_write_real(kname,"bottom",custom_karts[iiii].kart_bottom);
-		show_debug_message("kart height and width made")
-		if(os_type == /*os_linux*/-1){
-			show_debug_message("no sound for linux");
-		}else{
 		var fl = ini_read_string(kname,"stuns","./"+ckart+kname+"stun.ogg");
-		show_debug_message("stun<")
 		custom_karts[iiii].kart_stun = sound_add(fl,false,false);
-		show_debug_message("stun>")
 		if(custom_karts[iiii].kart_stun == -1){
-			show_debug_message("file copy")
 			file_copy("custom_kart_source\\snd_slct_asriel.ogg",fl);
-			show_debug_message("file copy successful")
 			custom_karts[iiii].kart_stun = sound_add(fl,false,false);
 		}
-		show_debug_message("stun?")
 		ini_write_string(kname,"stuns",fl)
-		show_debug_message("stun sound loaded")
 		var fl = ini_read_string(kname,"impact","./"+ckart+kname+"impact.ogg");
 		custom_karts[iiii].kart_impact = sound_add(fl,false,false);
 		if(custom_karts[iiii].kart_impact == -1){
 			file_copy("custom_kart_source\\snd_hit.ogg",fl);
 			custom_karts[iiii].kart_impact = sound_add(fl,false,false);
 		}
-		show_debug_message("impact sound loaded")
 		ini_write_string(kname,"impact",fl)
 		var fl = ini_read_string(kname,"power","./"+ckart+kname+"power.ogg");
 		custom_karts[iiii].kart_power = sound_add(fl,false,false);
 		if(custom_karts[iiii].kart_power == -1){
 			file_copy("custom_kart_source\\power_asriel.ogg",fl);
 			custom_karts[iiii].kart_power = sound_add(fl,false,false);
-		}
-		show_debug_message("power sound loaded")
-		show_debug_message("kart sounds loaded")
 		}
 		custom_karts[iiii].kart_ab = ini_read_string(kname,"ability_type", "Calories")
 		ini_write_string(kname,"ability_type",custom_karts[iiii].kart_ab);
@@ -775,7 +654,6 @@ function scr_load_karts(){
 		custom_karts[iiii].kart_ab3 = ini_read_real(kname,"ability_arg_3",false);
 		ini_write_real(kname,"ability_arg_3",custom_karts[iiii].kart_ab3)
 		ini_write_string(kname,"power",fl);
-		show_debug_message("loaded kart ability")
 		if(custom_karts[iiii].mdlspr_right = -1){
 			custom_karts[iiii].mdlspr_right = spr_kfrisk_r
 		}
@@ -803,10 +681,8 @@ function scr_load_karts(){
 		if(custom_karts[iiii].selector = -1){
 			custom_karts[iiii].selector = spr_slct_asriel
 		}
-		show_debug_message("Kart made")
 	}
 	ini_close();
-	}
 }
 function kart_sprite(sprite_down = spr_kfrisk_d,sprite_right = spr_kfrisk_r,sprite_left = spr_kfrisk_l,sprite_up = spr_kfrisk_u,sprite_stun = spr_kfrisk_stun,sprite_victory = spr_kfrisk_victory,sprite_defeat = spr_kfrisk_defeat,sprite_look = spr_kfrisk_lookd,sprite_sel = spr_slct_asriel)constructor{
 	down = sprite_down;

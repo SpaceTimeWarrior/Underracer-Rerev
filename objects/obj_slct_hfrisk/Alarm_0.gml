@@ -11,7 +11,7 @@ global.char2_skin="Hacker Frisk"
 draw_player="Player 2"}
 
 if global.char_slct=3{
-global.char3="StoryShift Chara"
+global.char3="Hacker Frisk"
 global.char3_obj=obj_kart_frisk
 global.char3_skin="Hacker Frisk"
 draw_player="Player 3"}

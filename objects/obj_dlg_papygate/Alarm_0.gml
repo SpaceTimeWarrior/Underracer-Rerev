@@ -7,8 +7,7 @@ spriteface=spr_dlg_papyrus_evil
 txtsound=snd_talk_papyrus
 myfont=fnt_papyrus
 writer_msg(
-scr_dlg_master(27,0)
-)
+scr_dlg_master(27,0))
 }}  
 
 if dialogue=2{ 
