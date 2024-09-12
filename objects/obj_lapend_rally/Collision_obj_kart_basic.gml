@@ -1,6 +1,21 @@
 sound_2play(snd_lapcomplete)
 other.x+=48
 other.lap+=1
+if (other.lap>global.clap){
+	global.clap +=1
+}
+if(global.clap<=global.lap_limit){
+		if(other.lap-1<0){
+			other.lap = 0
+		}
+		if(other.lap-1>=array_length(global.pos_mat)){
+			global.pos_mat[other.lap-1]=0
+		}
+		other.race_position = global.pos_mat[other.lap-1];
+		global.pos_mat[other.lap-1]++
+		tval = other.lap-1
+		alarm[3]=1
+}
 other.bot_pathstart=true
 
 if other.lap=global.lap_limit+1{

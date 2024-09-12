@@ -1,4 +1,3 @@
-function window_set_showborder(enable){}
 function message_size(xx,yy){}
 function message_caption(show,mess){}
 function message_mouse_color(color){}

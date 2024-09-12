@@ -4,6 +4,9 @@ function scr_dlg_master(dlgt=0,dlg2 = 0){
 		case "en_US":
 		default:
 		switch(dlgt){//this tells which dialog to get
+			case -1://title update info
+				return "UnderRacer 2016 v.0.59 / Press C to see Game Info and Credits."+"\n FanReRevivalUpdate 2022-2024 V.0.4.80";
+				break;
 			case 0://obj_dlg_alwaysfacing
 				return "* Weird how it's always&facing you, right?";
 			break;

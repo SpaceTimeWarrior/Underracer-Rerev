@@ -105,6 +105,13 @@ global.preview_charname="UF!Papyrus"
 sprite_index=spr_uf_papy_d
 }}}
 
+if position_meeting(mouse_x,mouse_y,obj_slct_mewmew01){
+if instance_exists(obj_slct_mewmew01){
+if obj_slct_mewmew01.sprite_index!=spr_slct_nochar{
+global.preview_charname="Mad Mew Mew"
+sprite_index=spr_mewmew_d
+}}}
+
 if position_meeting(mouse_x,mouse_y,obj_slct_ss_chara){
 if instance_exists(obj_slct_ss_chara){
 if obj_slct_ss_chara.sprite_index!=spr_slct_nochar{

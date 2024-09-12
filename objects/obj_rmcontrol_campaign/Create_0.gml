@@ -1,4 +1,5 @@
 // initialize 3D
+show_debug_message(string(room_get_name(room)))
 d3d_start();
 d3d_set_hidden(1);
 d3d_set_culling(0);

@@ -36,6 +36,9 @@ lastracer_player=0
 alarm[0]=11
 multiline = false
 image_speed=0.5
+global.clap = 0
+global.pos_mat = array_create(global.lap_limit,0)
+tval = 0
 /*if(instance_number(obj_lapend)>1){
 	instance_create_depth(0,0,0,obj_lapend_tracker);
 }

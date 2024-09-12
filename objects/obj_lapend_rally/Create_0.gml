@@ -31,7 +31,9 @@ player6_minutes=0
 player6_seconds=0
 player6_id=0
 player6_char=""
-
+global.clap = 0
+global.pos_mat = array_create(global.lap_limit,0)
+tval = 0
 can_start=false
 lastracer_player=0
 alarm[0]=11
