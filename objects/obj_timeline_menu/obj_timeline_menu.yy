@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "cutscenes",
-    "path": "folders/Objects/do not place/cutscenes.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/cutscenes.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

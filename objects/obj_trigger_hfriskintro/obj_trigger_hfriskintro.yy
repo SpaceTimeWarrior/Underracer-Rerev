@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "intro",
-    "path": "folders/Objects/do not place/triggers/intro.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/triggers/intro.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "snowdin",
-    "path": "folders/Objects/do not place/cmpn_battles/snowdin.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/cmpn_battles/snowdin.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

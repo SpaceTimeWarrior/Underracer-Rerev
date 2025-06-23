@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "judgementhall",
-    "path": "folders/Objects/judgementhall.yy",
+    "path": "folders/Objects/areas-tracks/judgementhall.yy",
   },
   "parentObjectId": {
     "name": "obj_wall_draw_basic",

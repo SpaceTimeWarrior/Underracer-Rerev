@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "update additions",
+    "path": "folders/Objects/update additions.yy",
   },
   "parentObjectId": null,
   "persistent": false,

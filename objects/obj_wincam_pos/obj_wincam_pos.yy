@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "cameras",
+    "path": "folders/Objects/Race objects/cameras.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

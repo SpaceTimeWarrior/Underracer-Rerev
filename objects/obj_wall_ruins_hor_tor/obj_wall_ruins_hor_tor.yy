@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ruins",
-    "path": "folders/Objects/ruins.yy",
+    "path": "folders/Objects/areas-tracks/ruins.yy",
   },
   "parentObjectId": {
     "name": "obj_wall_draw_basic",

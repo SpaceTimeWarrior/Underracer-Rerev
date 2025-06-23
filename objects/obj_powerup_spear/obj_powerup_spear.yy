@@ -17,7 +17,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "powerups",
-    "path": "folders/Objects/do not place/powerups.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/powerups.yy",
   },
   "parentObjectId": {
     "name": "obj_powerup_basic",

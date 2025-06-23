@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "christmas",
-    "path": "folders/Objects/christmas.yy",
+    "path": "folders/Objects/areas-tracks/christmas.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

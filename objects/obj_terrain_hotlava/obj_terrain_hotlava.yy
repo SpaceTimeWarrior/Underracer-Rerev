@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "hotlands",
-    "path": "folders/Objects/hotlands.yy",
+    "path": "folders/Objects/areas-tracks/hotlands.yy",
   },
   "parentObjectId": null,
   "persistent": false,

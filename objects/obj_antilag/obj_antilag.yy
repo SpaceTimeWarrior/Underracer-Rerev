@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "do not place",
-    "path": "folders/Objects/do not place.yy",
+    "name": "do not place(basics and defaults)",
+    "path": "folders/Objects/do not place(basics and defaults).yy",
   },
   "parentObjectId": {
     "name": "master_parent",

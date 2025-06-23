@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "do not place",
-    "path": "folders/Objects/do not place.yy",
+    "name": "do not place(basics and defaults)",
+    "path": "folders/Objects/do not place(basics and defaults).yy",
   },
   "parentObjectId": {
     "name": "obj_floor_draw_basic",

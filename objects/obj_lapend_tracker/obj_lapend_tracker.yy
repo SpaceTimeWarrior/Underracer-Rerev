@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "required",
+    "path": "folders/Objects/Race objects/required.yy",
   },
   "parentObjectId": null,
   "persistent": false,

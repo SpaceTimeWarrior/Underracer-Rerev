@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "snowdin",
-    "path": "folders/Objects/snowdin.yy",
+    "path": "folders/Objects/areas-tracks/snowdin.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

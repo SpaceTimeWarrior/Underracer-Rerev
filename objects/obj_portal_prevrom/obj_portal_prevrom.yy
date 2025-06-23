@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "portals",
-    "path": "folders/Objects/portals.yy",
+    "path": "folders/Objects/campaign/portals.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

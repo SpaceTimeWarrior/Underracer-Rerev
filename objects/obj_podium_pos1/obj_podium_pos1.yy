@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "podium",
-    "path": "folders/Objects/podium.yy",
+    "path": "folders/Objects/Race objects/required/podium.yy",
   },
   "parentObjectId": {
     "name": "obj_podium_basic",

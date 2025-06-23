@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "core",
-    "path": "folders/Objects/core.yy",
+    "path": "folders/Objects/areas-tracks/core.yy",
   },
   "parentObjectId": {
     "name": "obj_wall_draw_animated_basic",

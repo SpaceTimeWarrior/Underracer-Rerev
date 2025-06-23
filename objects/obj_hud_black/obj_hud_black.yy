@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "huds",
-    "path": "folders/Objects/do not place/huds.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/huds.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

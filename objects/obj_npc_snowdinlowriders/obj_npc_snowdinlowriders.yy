@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "snowdin",
-    "path": "folders/Objects/snowdin.yy",
+    "path": "folders/Objects/areas-tracks/snowdin.yy",
   },
   "parentObjectId": {
     "name": "obj_col_basic",

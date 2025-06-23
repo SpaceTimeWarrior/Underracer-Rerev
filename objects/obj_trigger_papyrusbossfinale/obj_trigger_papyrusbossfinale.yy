@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "cmpn_bosses",
-    "path": "folders/Objects/do not place/cmpn_bosses.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/cmpn_bosses.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

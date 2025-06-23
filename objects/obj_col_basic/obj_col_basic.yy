@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "basics (parents)",
-    "path": "folders/Objects/do not place/basics (parents).yy",
+    "path": "folders/Objects/do not place(basics and defaults)/basics (parents).yy",
   },
   "parentObjectId": {
     "name": "obj_collidable",

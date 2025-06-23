@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "waterfall",
-    "path": "folders/Objects/waterfall.yy",
+    "path": "folders/Objects/areas-tracks/waterfall.yy",
   },
   "parentObjectId": {
     "name": "obj_floor_draw_animated_basic",

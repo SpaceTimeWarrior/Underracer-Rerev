@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "misc",
-    "path": "folders/Objects/do not place/misc.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/misc.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

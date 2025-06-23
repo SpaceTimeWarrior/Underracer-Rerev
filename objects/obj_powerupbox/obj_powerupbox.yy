@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Race objects",
+    "path": "folders/Objects/Race objects.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

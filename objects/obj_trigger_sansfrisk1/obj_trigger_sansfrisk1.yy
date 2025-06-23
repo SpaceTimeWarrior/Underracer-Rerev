@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "snowdin",
-    "path": "folders/Objects/do not place/triggers/snowdin.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/triggers/snowdin.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

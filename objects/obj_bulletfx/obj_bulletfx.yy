@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "fx",
-    "path": "folders/Objects/do not place/fx.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/fx.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

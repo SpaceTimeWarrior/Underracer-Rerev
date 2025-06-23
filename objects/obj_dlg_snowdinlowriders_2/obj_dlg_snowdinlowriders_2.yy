@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "dialogue",
-    "path": "folders/Objects/do not place/dialogue.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/dialogue.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

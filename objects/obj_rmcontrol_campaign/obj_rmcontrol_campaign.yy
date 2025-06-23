@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "campaign",
+    "path": "folders/Objects/campaign.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

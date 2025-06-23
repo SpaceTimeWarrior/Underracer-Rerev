@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "start objects",
-    "path": "folders/Objects/start objects.yy",
+    "path": "folders/Objects/Race objects/start objects.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

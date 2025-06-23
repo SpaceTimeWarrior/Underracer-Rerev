@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "newhome",
-    "path": "folders/Objects/newhome.yy",
+    "path": "folders/Objects/areas-tracks/newhome.yy",
   },
   "parentObjectId": {
     "name": "obj_floor_draw_basic",

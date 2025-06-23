@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ruins",
-    "path": "folders/Objects/do not place/cmpn_battles/ruins.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/cmpn_battles/ruins.yy",
   },
   "parentObjectId": {
     "name": "master_parent",

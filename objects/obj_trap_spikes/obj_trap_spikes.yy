@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "traps",
-    "path": "folders/Objects/do not place/traps.yy",
+    "path": "folders/Objects/do not place(basics and defaults)/traps.yy",
   },
   "parentObjectId": {
     "name": "obj_col_basic",
