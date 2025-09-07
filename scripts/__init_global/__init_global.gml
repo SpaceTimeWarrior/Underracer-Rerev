@@ -16,7 +16,8 @@ function __init_global() {
 	globalvar asriel_unlk;
 	asriel_unlk = false;
 	globalvar cv;
-	var cc = sprite_duplicate(0)-1;
+	var cc = string_digits(string(sprite_duplicate(spr_kasriel_l)))-1;
+	show_debug_message(string(cc))
 	sprite_delete(cc+1);//gets the total number of sprites
 	globalvar cspr;
 	cspr = cc

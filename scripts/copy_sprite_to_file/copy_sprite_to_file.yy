@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "copy_sprite_to_file",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "misc",
-    "path": "folders/Scripts/misc.yy",
+  "$GMScript":"v1",
+  "%Name":"copy_sprite_to_file",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"copy_sprite_to_file",
+  "parent":{
+    "name":"misc",
+    "path":"folders/Scripts/misc.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

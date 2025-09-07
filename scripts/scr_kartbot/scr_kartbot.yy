@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_kartbot",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "bots",
-    "path": "folders/Scripts/bots.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_kartbot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_kartbot",
+  "parent":{
+    "name":"bots",
+    "path":"folders/Scripts/bots.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

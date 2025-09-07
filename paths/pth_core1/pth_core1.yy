@@ -1,14 +1,14 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_core1",
-  "closed": true,
-  "kind": 1,
-  "parent": {
-    "name": "free races",
-    "path": "folders/Paths/free races.yy",
+  "$GMPath":"",
+  "%Name":"pth_core1",
+  "closed":true,
+  "kind":1,
+  "name":"pth_core1",
+  "parent":{
+    "name":"free races",
+    "path":"folders/Paths/free races.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":576.0,"y":336.0,},
     {"speed":100.0,"x":720.0,"y":336.0,},
     {"speed":100.0,"x":1104.0,"y":336.0,},
@@ -60,5 +60,7 @@
     {"speed":100.0,"x":192.0,"y":336.0,},
     {"speed":100.0,"x":464.0,"y":336.0,},
   ],
-  "precision": 4,
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

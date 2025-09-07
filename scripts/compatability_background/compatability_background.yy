@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "compatability_background",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "compatibility",
-    "path": "folders/Scripts/compatibility.yy",
+  "$GMScript":"v1",
+  "%Name":"compatability_background",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"compatability_background",
+  "parent":{
+    "name":"compatibility",
+    "path":"folders/Scripts/compatibility.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

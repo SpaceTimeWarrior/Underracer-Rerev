@@ -1,14 +1,14 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_cmpn_floweyracetut",
-  "closed": false,
-  "kind": 1,
-  "parent": {
-    "name": "campaign",
-    "path": "folders/Paths/campaign.yy",
+  "$GMPath":"",
+  "%Name":"pth_cmpn_floweyracetut",
+  "closed":false,
+  "kind":1,
+  "name":"pth_cmpn_floweyracetut",
+  "parent":{
+    "name":"campaign",
+    "path":"folders/Paths/campaign.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":400.0,"y":208.0,},
     {"speed":100.0,"x":480.0,"y":192.0,},
     {"speed":100.0,"x":576.0,"y":192.0,},
@@ -19,5 +19,7 @@
     {"speed":100.0,"x":896.0,"y":704.0,},
     {"speed":100.0,"x":1008.0,"y":688.0,},
   ],
-  "precision": 4,
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

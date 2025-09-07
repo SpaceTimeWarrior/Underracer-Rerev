@@ -1,13 +1,15 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_cmon_nopath",
-  "closed": false,
-  "kind": 0,
-  "parent": {
-    "name": "campaign",
-    "path": "folders/Paths/campaign.yy",
+  "$GMPath":"",
+  "%Name":"pth_cmon_nopath",
+  "closed":false,
+  "kind":0,
+  "name":"pth_cmon_nopath",
+  "parent":{
+    "name":"campaign",
+    "path":"folders/Paths/campaign.yy",
   },
-  "points": [],
-  "precision": 4,
+  "points":[],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

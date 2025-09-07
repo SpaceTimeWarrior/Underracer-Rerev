@@ -1,14 +1,14 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_snowdinforest2",
-  "closed": true,
-  "kind": 1,
-  "parent": {
-    "name": "free races",
-    "path": "folders/Paths/free races.yy",
+  "$GMPath":"",
+  "%Name":"pth_snowdinforest2",
+  "closed":true,
+  "kind":1,
+  "name":"pth_snowdinforest2",
+  "parent":{
+    "name":"free races",
+    "path":"folders/Paths/free races.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":432.0,"y":336.0,},
     {"speed":100.0,"x":672.0,"y":336.0,},
     {"speed":100.0,"x":720.0,"y":480.0,},
@@ -74,5 +74,7 @@
     {"speed":100.0,"x":160.0,"y":328.0,},
     {"speed":100.0,"x":312.0,"y":336.0,},
   ],
-  "precision": 4,
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

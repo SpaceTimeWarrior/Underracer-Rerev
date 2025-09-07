@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_newline",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "dialogue",
-    "path": "folders/Scripts/dialogue.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_newline",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_newline",
+  "parent":{
+    "name":"dialogue",
+    "path":"folders/Scripts/dialogue.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

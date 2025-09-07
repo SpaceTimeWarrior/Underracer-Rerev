@@ -1,14 +1,14 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_waterfall2",
-  "closed": true,
-  "kind": 1,
-  "parent": {
-    "name": "free races",
-    "path": "folders/Paths/free races.yy",
+  "$GMPath":"",
+  "%Name":"pth_waterfall2",
+  "closed":true,
+  "kind":1,
+  "name":"pth_waterfall2",
+  "parent":{
+    "name":"free races",
+    "path":"folders/Paths/free races.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":1232.0,"y":384.0,},
     {"speed":100.0,"x":1424.0,"y":384.0,},
     {"speed":100.0,"x":1640.0,"y":408.0,},
@@ -75,5 +75,7 @@
     {"speed":100.0,"x":528.0,"y":392.0,},
     {"speed":100.0,"x":920.0,"y":392.0,},
   ],
-  "precision": 4,
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

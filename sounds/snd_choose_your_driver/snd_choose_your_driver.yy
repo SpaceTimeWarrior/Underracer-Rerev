@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_choose_your_driver",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":22.636168,
+  "name":"snd_choose_your_driver",
+  "parent":{
+    "name":"backgrounds",
+    "path":"folders/Sounds/backgrounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_choose_your_driver.ogg",
+  "type":0,
+  "volume":1.0,
+}

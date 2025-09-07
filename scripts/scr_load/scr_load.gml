@@ -518,6 +518,8 @@ function scr_load_karts(){
 	ini_write_real("Main","karts",kart_number);
 	custom_karts = array_create(1)
 	for(var iiii = 0; iiii<kart_number;iiii++){
+		try{
+		show_debug_message(string(iiii+1))
 		custom_karts[iiii] = new karts()
 		custom_karts[iiii].char = ini_read_string("Main","Name_"+string(iiii),"Test_kart"+string(iiii));
 		var kname = custom_karts[iiii].char
@@ -535,7 +537,7 @@ function scr_load_karts(){
 		custom_karts[iiii].mdlspr_right=sprite_add(sprs,sprf,false,false,0,0);
 		array_push(custom_spr,custom_karts[iiii].mdlspr_right)
 		if(custom_karts[iiii].mdlspr_right==-1){
-			copy_sprite_to_file(spr_kfrisk_r,sprs)	
+			custom_karts[iiii].mdlspr_right=copy_sprite_to_file(spr_kfrisk_r,sprs,false)	
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_right,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"left","./"+ckart+"friskl"+string(iiii)+".png");
@@ -545,7 +547,7 @@ function scr_load_karts(){
 		custom_karts[iiii].mdlspr_left=sprite_add(sprs,sprf,false,false,0,0);
 		array_push(custom_spr,custom_karts[iiii].mdlspr_left)
 		if(custom_karts[iiii].mdlspr_left==-1){
-			copy_sprite_to_file(spr_kfrisk_l,sprs)	
+			custom_karts[iiii].mdlspr_left=copy_sprite_to_file(spr_kfrisk_l,sprs,false)	
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_left,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"down","./"+ckart+"friskd"+string(iiii)+".png");
@@ -555,7 +557,7 @@ function scr_load_karts(){
 		custom_karts[iiii].mdlspr_down=sprite_add(sprs,sprf,false,false,0,0);
 		array_push(custom_spr,custom_karts[iiii].mdlspr_down)
 		if(custom_karts[iiii].mdlspr_down==-1){
-			copy_sprite_to_file(spr_kfrisk_d,sprs)	
+			custom_karts[iiii].mdlspr_down=copy_sprite_to_file(spr_kfrisk_d,sprs,false)	
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_down,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"up","./"+ckart+"frisku"+string(iiii)+".png");
@@ -565,7 +567,7 @@ function scr_load_karts(){
 		custom_karts[iiii].mdlspr_up=sprite_add(sprs,sprf,false,false,0,0);
 		array_push(custom_spr,custom_karts[iiii].mdlspr_up)
 		if(custom_karts[iiii].mdlspr_up==-1){
-			copy_sprite_to_file(spr_kfrisk_u,sprs)	
+			custom_karts[iiii].mdlspr_up=copy_sprite_to_file(spr_kfrisk_u,sprs,false)	
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_up,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"stun","./"+ckart+"frisks"+string(iiii)+".png");
@@ -575,7 +577,7 @@ function scr_load_karts(){
 		custom_karts[iiii].mdlspr_stun=sprite_add(sprs,sprf,false,false,0,0);
 		array_push(custom_spr,custom_karts[iiii].mdlspr_stun)
 		if(custom_karts[iiii].mdlspr_stun==-1){
-			copy_sprite_to_file(spr_kfrisk_stun,sprs)	
+			custom_karts[iiii].mdlspr_stun=copy_sprite_to_file(spr_kfrisk_stun,sprs,false)	
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_stun,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"victory","./"+ckart+"friskv"+string(iiii)+".png");
@@ -585,7 +587,7 @@ function scr_load_karts(){
 		custom_karts[iiii].mdlspr_victory=sprite_add(sprs,sprf,false,false,0,0);
 		array_push(custom_spr,custom_karts[iiii].mdlspr_victory)
 		if(custom_karts[iiii].mdlspr_victory==-1){
-			copy_sprite_to_file(spr_kfrisk_victory,sprs)	
+			custom_karts[iiii].mdlspr_victory=copy_sprite_to_file(spr_kfrisk_victory,sprs,false)	
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_victory,true, 0,0, 0,0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"defeat","./"+ckart+"friskdef"+string(iiii)+".png");
@@ -595,7 +597,7 @@ function scr_load_karts(){
 		custom_karts[iiii].mdlspr_defeat=sprite_add(sprs,sprf,false,false,0,0);
 		array_push(custom_spr,custom_karts[iiii].mdlspr_defeat)
 		if(custom_karts[iiii].mdlspr_defeat==-1){
-			copy_sprite_to_file(spr_kfrisk_defeat,sprs)	
+			custom_karts[iiii].mdlspr_defeat=copy_sprite_to_file(spr_kfrisk_defeat,sprs,false)	
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_defeat,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"look","./"+ckart+"frisklkd"+string(iiii)+".png");
@@ -605,7 +607,7 @@ function scr_load_karts(){
 		custom_karts[iiii].mdlspr_down_look=sprite_add(sprs,sprf,false,false,0,0);
 		array_push(custom_spr,custom_karts[iiii].mdlspr_down_look)
 		if(custom_karts[iiii].mdlspr_down_look==-1){
-			copy_sprite_to_file(spr_kfrisk_lookd,sprs)	
+			custom_karts[iiii].mdlspr_down_look=copy_sprite_to_file(spr_kfrisk_lookd,sprs,false)	
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_down_look,true, 0,0, 0,0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"select","./"+ckart+"asrielsel"+string(iiii)+".png");
@@ -615,7 +617,7 @@ function scr_load_karts(){
 		custom_karts[iiii].selector = sprite_add(sprs,sprf,false,false,0,0);
 		array_push(custom_spr,custom_karts[iiii].selector)
 		if(custom_karts[iiii].selector==-1){
-			copy_sprite_to_file(spr_slct_asriel,sprs)	
+			custom_karts[iiii].selector=copy_sprite_to_file(spr_slct_asriel,sprs,false)	
 		}
 		custom_karts[iiii].kart_width=ini_read_real(kname,"width",5);
 		ini_write_real(kname,"width",custom_karts[iiii].kart_width);
@@ -624,21 +626,33 @@ function scr_load_karts(){
 		custom_karts[iiii].kart_bottom=ini_read_real(kname,"bottom",0);
 		ini_write_real(kname,"bottom",custom_karts[iiii].kart_bottom);
 		var fl = ini_read_string(kname,"stuns","./"+ckart+kname+"stun.ogg");
-		custom_karts[iiii].kart_stun = sound_add(fl,false,false);
+		if(file_exists(fl)){
+			custom_karts[iiii].kart_stun = sound_add(fl,false,false);
+		}else{
+			custom_karts[iiii].kart_stun = -1
+		}
 		if(custom_karts[iiii].kart_stun == -1){
 			file_copy("custom_kart_source\\snd_slct_asriel.ogg",fl);
 			custom_karts[iiii].kart_stun = sound_add(fl,false,false);
 		}
 		ini_write_string(kname,"stuns",fl)
 		var fl = ini_read_string(kname,"impact","./"+ckart+kname+"impact.ogg");
-		custom_karts[iiii].kart_impact = sound_add(fl,false,false);
+		if(file_exists(fl)){
+			custom_karts[iiii].kart_impact = sound_add(fl,false,false);
+		}else{
+			custom_karts[iiii].kart_impact = -1
+		}
 		if(custom_karts[iiii].kart_impact == -1){
 			file_copy("custom_kart_source\\snd_hit.ogg",fl);
 			custom_karts[iiii].kart_impact = sound_add(fl,false,false);
 		}
 		ini_write_string(kname,"impact",fl)
 		var fl = ini_read_string(kname,"power","./"+ckart+kname+"power.ogg");
-		custom_karts[iiii].kart_power = sound_add(fl,false,false);
+		if(file_exists(fl)){
+			custom_karts[iiii].kart_power = sound_add(fl,false,false);
+		}else{
+			custom_karts[iiii].kart_power = -1
+		}
 		if(custom_karts[iiii].kart_power == -1){
 			file_copy("custom_kart_source\\power_asriel.ogg",fl);
 			custom_karts[iiii].kart_power = sound_add(fl,false,false);
@@ -681,7 +695,11 @@ function scr_load_karts(){
 		if(custom_karts[iiii].selector = -1){
 			custom_karts[iiii].selector = spr_slct_asriel
 		}
+		}catch(e){
+			show_debug_message(e.message);
+		}
 	}
+	
 	ini_close();
 }
 function kart_sprite(sprite_down = spr_kfrisk_d,sprite_right = spr_kfrisk_r,sprite_left = spr_kfrisk_l,sprite_up = spr_kfrisk_u,sprite_stun = spr_kfrisk_stun,sprite_victory = spr_kfrisk_victory,sprite_defeat = spr_kfrisk_defeat,sprite_look = spr_kfrisk_lookd,sprite_sel = spr_slct_asriel)constructor{

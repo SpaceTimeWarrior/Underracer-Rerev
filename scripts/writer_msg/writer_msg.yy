@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "writer_msg",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "dialogue",
-    "path": "folders/Scripts/dialogue.yy",
+  "$GMScript":"v1",
+  "%Name":"writer_msg",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"writer_msg",
+  "parent":{
+    "name":"dialogue",
+    "path":"folders/Scripts/dialogue.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_sprite_model",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "models",
-    "path": "folders/Scripts/models.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_sprite_model",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_sprite_model",
+  "parent":{
+    "name":"models",
+    "path":"folders/Scripts/models.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_dialoguebox",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "dialogue",
-    "path": "folders/Scripts/dialogue.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_dialoguebox",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_dialoguebox",
+  "parent":{
+    "name":"dialogue",
+    "path":"folders/Scripts/dialogue.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

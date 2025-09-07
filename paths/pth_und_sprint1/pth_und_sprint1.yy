@@ -1,14 +1,14 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_und_sprint1",
-  "closed": false,
-  "kind": 1,
-  "parent": {
-    "name": "campaign",
-    "path": "folders/Paths/campaign.yy",
+  "$GMPath":"",
+  "%Name":"pth_und_sprint1",
+  "closed":false,
+  "kind":1,
+  "name":"pth_und_sprint1",
+  "parent":{
+    "name":"campaign",
+    "path":"folders/Paths/campaign.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":192.0,"y":1872.0,},
     {"speed":100.0,"x":544.0,"y":1872.0,},
     {"speed":100.0,"x":624.0,"y":1872.0,},
@@ -93,5 +93,7 @@
     {"speed":100.0,"x":2800.0,"y":1872.0,},
     {"speed":100.0,"x":2984.0,"y":1872.0,},
   ],
-  "precision": 4,
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

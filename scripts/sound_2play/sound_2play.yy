@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "sound_2play",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "misc",
-    "path": "folders/Scripts/misc.yy",
+  "$GMScript":"v1",
+  "%Name":"sound_2play",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sound_2play",
+  "parent":{
+    "name":"misc",
+    "path":"folders/Scripts/misc.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

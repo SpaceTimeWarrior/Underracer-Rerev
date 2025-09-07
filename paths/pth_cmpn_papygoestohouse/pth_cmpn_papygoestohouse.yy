@@ -1,14 +1,14 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_cmpn_papygoestohouse",
-  "closed": false,
-  "kind": 1,
-  "parent": {
-    "name": "campaign",
-    "path": "folders/Paths/campaign.yy",
+  "$GMPath":"",
+  "%Name":"pth_cmpn_papygoestohouse",
+  "closed":false,
+  "kind":1,
+  "name":"pth_cmpn_papygoestohouse",
+  "parent":{
+    "name":"campaign",
+    "path":"folders/Paths/campaign.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":3448.0,"y":2256.0,},
     {"speed":100.0,"x":3440.0,"y":2208.0,},
     {"speed":100.0,"x":3440.0,"y":2176.0,},
@@ -38,5 +38,7 @@
     {"speed":100.0,"x":3472.0,"y":4712.0,},
     {"speed":100.0,"x":3464.0,"y":4680.0,},
   ],
-  "precision": 4,
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

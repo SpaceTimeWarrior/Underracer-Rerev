@@ -1,4 +1,4 @@
-setplayerpos=true;//this is abandoned code
+setplayerpos=true;
 player = 0;
 global.cmpn_room=room
 image_speed=0.2

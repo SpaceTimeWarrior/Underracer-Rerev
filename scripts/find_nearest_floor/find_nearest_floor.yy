@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "find_nearest_floor",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "misc",
-    "path": "folders/Scripts/misc.yy",
+  "$GMScript":"v1",
+  "%Name":"find_nearest_floor",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"find_nearest_floor",
+  "parent":{
+    "name":"misc",
+    "path":"folders/Scripts/misc.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

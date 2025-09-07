@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_mad_mad_racing",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":84.976326,
+  "name":"snd_mad_mad_racing",
+  "parent":{
+    "name":"backgrounds",
+    "path":"folders/Sounds/backgrounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_mad_mad_racing.mp3",
+  "type":0,
+  "volume":1.0,
+}

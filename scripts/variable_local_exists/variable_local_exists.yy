@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "variable_local_exists",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "misc",
-    "path": "folders/Scripts/compatibility/misc.yy",
+  "$GMScript":"v1",
+  "%Name":"variable_local_exists",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"variable_local_exists",
+  "parent":{
+    "name":"misc",
+    "path":"folders/Scripts/compatibility/misc.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

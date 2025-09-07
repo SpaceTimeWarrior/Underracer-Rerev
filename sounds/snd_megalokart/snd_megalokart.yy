@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_megalokart",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":75.49388,
+  "name":"snd_megalokart",
+  "parent":{
+    "name":"backgrounds",
+    "path":"folders/Sounds/backgrounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_megalokart.mp3",
+  "type":0,
+  "volume":1.0,
+}

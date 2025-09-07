@@ -1,14 +1,14 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_christmas2",
-  "closed": true,
-  "kind": 1,
-  "parent": {
-    "name": "free races",
-    "path": "folders/Paths/free races.yy",
+  "$GMPath":"",
+  "%Name":"pth_christmas2",
+  "closed":true,
+  "kind":1,
+  "name":"pth_christmas2",
+  "parent":{
+    "name":"free races",
+    "path":"folders/Paths/free races.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":1808.0,"y":944.0,},
     {"speed":100.0,"x":2112.0,"y":944.0,},
     {"speed":100.0,"x":2384.0,"y":944.0,},
@@ -95,5 +95,7 @@
     {"speed":100.0,"x":1328.0,"y":976.0,},
     {"speed":100.0,"x":1568.0,"y":944.0,},
   ],
-  "precision": 4,
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }
