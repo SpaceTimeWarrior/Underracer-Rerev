@@ -10,7 +10,6 @@
     {"name":"inst_71D4ADD2","path":"rooms/rm_cmpgn_tutorial1/rm_cmpgn_tutorial1.yy",},
     {"name":"inst_A971340C","path":"rooms/rm_cmpgn_tutorial1/rm_cmpgn_tutorial1.yy",},
     {"name":"inst_85DAD29E","path":"rooms/rm_cmpgn_tutorial1/rm_cmpgn_tutorial1.yy",},
-    {"name":"inst_80DE0695","path":"rooms/rm_cmpgn_tutorial1/rm_cmpgn_tutorial1.yy",},
     {"name":"inst_BAD52D2A","path":"rooms/rm_cmpgn_tutorial1/rm_cmpgn_tutorial1.yy",},
     {"name":"inst_1FA0AB43","path":"rooms/rm_cmpgn_tutorial1/rm_cmpgn_tutorial1.yy",},
     {"name":"inst_C31ACD2E","path":"rooms/rm_cmpgn_tutorial1/rm_cmpgn_tutorial1.yy",},
@@ -56,6 +55,7 @@
     {"name":"inst_EDD9DDCD","path":"rooms/rm_cmpgn_tutorial1/rm_cmpgn_tutorial1.yy",},
     {"name":"inst_885492B2","path":"rooms/rm_cmpgn_tutorial1/rm_cmpgn_tutorial1.yy",},
     {"name":"inst_4D503725","path":"rooms/rm_cmpgn_tutorial1/rm_cmpgn_tutorial1.yy",},
+    {"name":"inst_52D3397E","path":"rooms/rm_cmpgn_tutorial1/rm_cmpgn_tutorial1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -110,8 +110,8 @@
         {"$GMRInstance":"v2","%Name":"inst_B2EE502B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B2EE502B","objectId":{"name":"obj_wall_black_hor","path":"objects/obj_wall_black_hor/obj_wall_black_hor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":352.0,},
         {"$GMRInstance":"v2","%Name":"inst_EDD9DDCD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_EDD9DDCD","objectId":{"name":"obj_wall_black_hor","path":"objects/obj_wall_black_hor/obj_wall_black_hor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":352.0,},
       ],"layers":[],"name":"Compatibility_Instances_Depth_-1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"Compatibility_Instances_Depth_0","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_80DE0695","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_80DE0695","objectId":{"name":"obj_ruinsgate","path":"objects/obj_ruinsgate/obj_ruinsgate.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":592.0,"y":272.0,},
+    {"$GMRInstanceLayer":"","%Name":"Compatibility_Instances_Depth_0","depth":0,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v2","%Name":"inst_52D3397E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_52D3397E","objectId":{"name":"obj_portal_tutorial","path":"objects/obj_portal_tutorial/obj_portal_tutorial.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":592.0,"y":272.0,},
       ],"layers":[],"name":"Compatibility_Instances_Depth_0","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Compatibility_Instances_Depth_10","depth":10,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_85DAD29E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_85DAD29E","objectId":{"name":"obj_ruins_firstroom","path":"objects/obj_ruins_firstroom/obj_ruins_firstroom.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":272.0,},

@@ -8,7 +8,9 @@ draw_text(x,y+136+48,string_hash_to_newline("Left: "+gamepad_to_string(global.co
 draw_text(x,y+136+64,string_hash_to_newline("Powerup: "+gamepad_to_string(global.control_pl1use_jk)))
 draw_text(x,y+136+80,string_hash_to_newline("Attack: "+gamepad_to_string(global.control_pl1special_jk)))
 draw_text(x,y+136+96,string_hash_to_newline("Rearview: "+gamepad_to_string(global.control_pl1cam_jk)))
-if gamepad_exists(p1gp){draw_text(x,y+136+96+16,string_hash_to_newline("Enabled"))}
-if !gamepad_exists(p1gp){draw_text(x,y+136+96+16,string_hash_to_newline("Not Enabled"))}
-draw_text(x,y+136+96+32,string_hash_to_newline("While holding the button, press the mouse to bind."))
+draw_text(x,y+136+96+16,string_hash_to_newline("Reset: "+gamepad_to_string(global.control_pl1cam_jkRS)))
+
+if gamepad_exists(p1gp){draw_text(x,y+136+96+32,string_hash_to_newline("Enabled"))}
+if !gamepad_exists(p1gp){draw_text(x,y+136+96+32,string_hash_to_newline("Not Enabled"))}
+draw_text(x,y+136+96+48,string_hash_to_newline("While holding the button, press the mouse to bind."))
 //draw_text(x,y+136+93+38,string(p1gp))

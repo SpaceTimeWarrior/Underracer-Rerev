@@ -8,4 +8,5 @@ draw_text(x,y+136+48,string_hash_to_newline("Left: "+string(chr(global.control_p
 draw_text(x,y+136+64,string_hash_to_newline("Powerup: "+string(chr(global.control_pl2use_kb))))
 draw_text(x,y+136+80,string_hash_to_newline("Attack: "+string(chr(global.control_pl2special_kb))))
 draw_text(x,y+136+96,string_hash_to_newline("Rearview: "+string(chr(global.control_pl2cam_kb))))
+draw_text(x,y+136+112,string_hash_to_newline("RESET: "+string(chr(global.control_pl2cam_RS))))
 

@@ -12,6 +12,10 @@ function scr_load_data() {
 	globalvar campaign_hydrolics_w;//acel
 	globalvar campaign_undyne_waterpump;//speed
 	globalvar battle_dog;
+	globalvar moux;
+	globalvar mouy;
+	moux = 0;
+	mouy = 0;
 	battle_dog= 0;
 	campaign_tires_r = 0;
 	campaign_engine_s = 0; campaign_transm_s = 0; campaign_tires_s = 0;campaign_tor_turbo = 0;
@@ -445,6 +449,14 @@ function scr_load_data() {
 	global.control_pl2special_jk=file_text_read_real(file)  
 	file_text_readln(file) 
 	global.control_pl2cam_jk=file_text_read_real(file)  
+	file_text_readln(file)
+	global.control_pl1cam_RS=file_text_read_real(file)
+	file_text_readln(file)
+	global.control_pl2cam_RS=file_text_read_real(file)
+	file_text_readln(file)
+	global.control_pl1cam_jkRS=file_text_read_real(file)
+	file_text_readln(file)
+	global.control_pl2cam_jkRS=file_text_read_real(file)
 	file_text_close(file)
 	}
 	else
@@ -457,6 +469,7 @@ function scr_load_data() {
 	global.control_pl1use_kb=ord("Z")
 	global.control_pl1special_kb=ord("X")
 	global.control_pl1cam_kb=ord("Q")
+	global.control_pl1cam_RS=ord("R");
 
 	global.control_pl2move_kb=ord("I")
 	global.control_pl2break_kb=ord("K")
@@ -465,6 +478,7 @@ function scr_load_data() {
 	global.control_pl2use_kb=ord("N")
 	global.control_pl2special_kb=ord("M")
 	global.control_pl2cam_kb=ord("U")
+	global.control_pl2cam_RS=ord("P");
 
 	//Global controls for all players (Joystick)
 	global.control_pl1move_jk=15
@@ -474,6 +488,7 @@ function scr_load_data() {
 	global.control_pl1use_jk=1
 	global.control_pl1special_jk=2
 	global.control_pl1cam_jk=4
+	global.control_pl1cam_jkRS=6
 
 	global.control_pl2move_jk=15
 	global.control_pl2break_jk=16
@@ -482,6 +497,7 @@ function scr_load_data() {
 	global.control_pl2use_jk=1
 	global.control_pl2special_jk=2
 	global.control_pl2cam_jk=4
+	global.control_pl2cam_jkRS=6
 	}
 
 

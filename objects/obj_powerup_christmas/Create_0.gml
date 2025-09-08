@@ -1,3 +1,4 @@
+event_inherited()
 camsin=0
 camcos=0
 cam=0

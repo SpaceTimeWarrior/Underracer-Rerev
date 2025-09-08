@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_cmpn_boss_sansrally",
-  "creationCodeFile":"${project_dir}/rooms/rm_cmpn_boss_sansrally/RoomCreationCode.gml",
+  "creationCodeFile":"rooms/rm_cmpn_boss_sansrally/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

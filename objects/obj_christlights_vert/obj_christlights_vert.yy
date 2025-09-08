@@ -12,8 +12,8 @@
     "path":"folders/Objects/christmas.yy",
   },
   "parentObjectId":{
-    "name":"obj_wall_draw_nocol",
-    "path":"objects/obj_wall_draw_nocol/obj_wall_draw_nocol.yy",
+    "name":"obj_wall_draw_basic",
+    "path":"objects/obj_wall_draw_basic/obj_wall_draw_basic.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

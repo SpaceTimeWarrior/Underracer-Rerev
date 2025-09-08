@@ -12,8 +12,8 @@
     "path":"folders/Objects/snowdin.yy",
   },
   "parentObjectId":{
-    "name":"obj_floor_draw_basic",
-    "path":"objects/obj_floor_draw_basic/obj_floor_draw_basic.yy",
+    "name":"obj_nfloor_draw_basic",
+    "path":"objects/obj_nfloor_draw_basic/obj_nfloor_draw_basic.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

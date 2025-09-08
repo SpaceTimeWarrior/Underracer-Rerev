@@ -533,6 +533,7 @@
     {"name":"obj_portal_snowdin","order":2,"path":"objects/obj_portal_snowdin/obj_portal_snowdin.yy",},
     {"name":"obj_portal_torielrace_hard","order":8,"path":"objects/obj_portal_torielrace_hard/obj_portal_torielrace_hard.yy",},
     {"name":"obj_portal_torielrace","order":7,"path":"objects/obj_portal_torielrace/obj_portal_torielrace.yy",},
+    {"name":"obj_portal_tutorial","order":4,"path":"objects/obj_portal_tutorial/obj_portal_tutorial.yy",},
     {"name":"obj_powerup_asrielbullet","order":11,"path":"objects/obj_powerup_asrielbullet/obj_powerup_asrielbullet.yy",},
     {"name":"obj_powerup_asrielstar","order":9,"path":"objects/obj_powerup_asrielstar/obj_powerup_asrielstar.yy",},
     {"name":"obj_powerup_basic","order":8,"path":"objects/obj_powerup_basic/obj_powerup_basic.yy",},

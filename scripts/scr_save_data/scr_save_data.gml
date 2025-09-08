@@ -202,6 +202,14 @@ function scr_save_data() {
 	file_text_write_string(file,string(global.control_pl2special_jk))
 	file_text_writeln(file) 
 	file_text_write_string(file,string(global.control_pl2cam_jk))
+	file_text_writeln(file) 
+	file_text_write_string(file,string(global.control_pl1cam_RS))
+	file_text_writeln(file) 
+	file_text_write_string(file,string(global.control_pl2cam_RS))
+	file_text_writeln(file) 
+	file_text_write_string(file,string(global.control_pl1cam_jkRS))
+	file_text_writeln(file) 
+	file_text_write_string(file,string(global.control_pl2cam_jkRS))
 	file_text_close(file)
 
 

@@ -1,4 +1,4 @@
-if sprite_index=spr_options_bindsettings{if image_index>6{can_bind=false sprite_index=spr_options_bind_pl2 image_index=0}}
+if sprite_index=spr_options_bindsettings{if image_index>7{can_bind=false sprite_index=spr_options_bind_pl2 image_index=0}}
 gamepad_set_colour(p1gp, c_white);
 if can_bind=true{
 if sprite_index=spr_options_bindsettings{
@@ -9,5 +9,7 @@ if image_index=3{if mouse_check_button_pressed(mb_any){global.control_pl2left_jk
 if image_index=4{if mouse_check_button_pressed(mb_any){global.control_pl2use_jk=gamepad_find_button(p2gp) sound_2play(snd_click) alarm[0]=3}}
 if image_index=5{if mouse_check_button_pressed(mb_any){global.control_pl2special_jk=gamepad_find_button(p2gp) sound_2play(snd_click) alarm[0]=3}}
 if image_index=6{if mouse_check_button_pressed(mb_any){global.control_pl2cam_jk=gamepad_find_button(p2gp) sound_2play(snd_click) alarm[0]=3}}
+if image_index=7{if mouse_check_button_pressed(mb_any){global.control_pl2cam_jkRS=gamepad_find_button(p2gp) sound_2play(snd_click) alarm[0]=3}}
+
 }}
 

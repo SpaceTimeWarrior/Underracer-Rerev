@@ -1,4 +1,5 @@
 function scr_kartalarm_0() {
+	show_debug_message(room_get_name(room))
 	if bot=false{
 	//If Gamemode is Race
 	if global.gamemode="Race"{
@@ -116,10 +117,32 @@ function scr_kartsettings() {
 	if player=1{
 	if keyboard_check(global.control_pl1cam_kb) or gamepad_check_button(p1gp,global.control_pl1cam_jk){looktimer-=2.5 camobj.adddir=180 camobj.DX = -40}
 	if keyboard_check_released(global.control_pl1cam_kb) or gamepad_check_button_released(p1gp,global.control_pl1cam_jk){mdlspr_down=mdlspr_down_ref camobj.adddir=0 camobj.DX = -20 looktimer=20}
+	//track_reset
+	if keyboard_check_released(global.control_pl1cam_RS) or gamepad_check_button_released(p1gp,global.control_pl1cam_jk){
+		if z<2{
+			fall=true
+			if !sound_isplaying(snd_fall){sound_2play(snd_fall)}
+			if bot=false{if global.level="CORE"{if global.achieve_corefall!=-1{global.achieve_corefall=6}}}
+			else{
+				fallen++;
+			}
+}	
+	}
+	
 	}
 	if player=2{
 	if keyboard_check(global.control_pl2cam_kb) or gamepad_check_button(p2gp,global.control_pl2cam_jk){looktimer-=2.5 camobj.adddir=180 camobj.DX = -40}
 	if keyboard_check_released(global.control_pl2cam_kb) or gamepad_check_button_released(p2gp,global.control_pl2cam_jk){mdlspr_down=mdlspr_down_ref camobj.adddir=0 camobj.DX = -20 looktimer=20}
+	if keyboard_check_pressed(global.control_pl2cam_RS) or gamepad_check_button_released(p1gp,global.control_pl2cam_jk){
+		if z<2{
+			fall=true
+			if !sound_isplaying(snd_fall){sound_2play(snd_fall)}
+			if bot=false{if global.level="CORE"{if global.achieve_corefall!=-1{global.achieve_corefall=6}}}
+			else{
+				fallen++;
+			}
+}	
+	}
 	}}
 	}
 	}
@@ -178,6 +201,17 @@ function scr_kartsettings() {
 	if keyboard_check(global.control_pl1special_kb) or gamepad_check_button(p1gp,global.control_pl1special_jk){ability_trigger=true}
 	if !keyboard_check(global.control_pl1right_kb) and !gamepad_check_button(p1gp,global.control_pl1right_jk) and 
 	!keyboard_check(global.control_pl1left_kb) and !gamepad_check_button(p1gp,global.control_pl1left_jk){driftadd=0}
+	
+	if keyboard_check_pressed(global.control_pl1cam_RS) or gamepad_check_button_released(p1gp,global.control_pl1cam_jk){
+		if z<2{
+			fall=true
+			if !sound_isplaying(snd_fall){sound_2play(snd_fall)}
+			if bot=false{if global.level="CORE"{if global.achieve_corefall!=-1{global.achieve_corefall=6}}}
+			else{
+				fallen++;
+			}
+}	
+	}
 	}
 	if(instance_exists(obj_lapend)&&abs(speed)>0){
 			if(distance_to_object(instance_nearest(x,y,obj_lapend))<100){
@@ -204,6 +238,17 @@ function scr_kartsettings() {
 	if keyboard_check(global.control_pl2special_kb) or gamepad_check_button(p2gp,global.control_pl2special_jk){ability_trigger=true}
 	if !keyboard_check(global.control_pl2right_kb) and !gamepad_check_button(p2gp,global.control_pl2right_jk) and 
 	!keyboard_check(global.control_pl2left_kb) and !gamepad_check_button(p2gp,global.control_pl2left_jk){driftadd=0}
+	
+	if keyboard_check_pressed(global.control_pl2cam_RS) or gamepad_check_button_released(p2gp,global.control_pl2cam_jk){
+		if z<2{
+			fall=true
+			if !sound_isplaying(snd_fall){sound_2play(snd_fall)}
+			if bot=false{if global.level="CORE"{if global.achieve_corefall!=-1{global.achieve_corefall=6}}}
+			else{
+				fallen++;
+			}
+}	
+	}
 	}
 
 	}
