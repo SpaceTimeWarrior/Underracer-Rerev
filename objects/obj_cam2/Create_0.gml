@@ -1,10 +1,11 @@
-//Player Camera
+pitch=0
 activate=true
 height=18
 camdir=0
 zoom=90
 adddir=0
-pitch=0
+camsin=0
+camcos=0
 z=0
 DX = -20; // When this value is positive, the tip is right to the origin.
 DY = 0; // When this value is negative, the tip is above the origin.
@@ -17,4 +18,3 @@ Angle = point_direction(0, 0, DX, DY); // This is the angle to the tip from the 
 destroy=false
 
 hud=instance_create(x,y,obj_hud2)
-

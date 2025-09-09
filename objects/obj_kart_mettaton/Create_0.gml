@@ -20,8 +20,8 @@ mdlspr_victory=spr_kmtt_victory
 mdlspr_defeat=spr_kmtt_defeat
 mdlspr_down_look=spr_kmtt_lookd
 char="Mettaton"
-kartwidth=7
-kartheight=15+z
+kartwidth=6
+kartheight=13+z
 kartbottom=0+z
 ability_sndplay=true
 scr_kartsettings_create()

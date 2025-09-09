@@ -20,8 +20,8 @@ mdlspr_victory=spr_kbpants_victory
 mdlspr_defeat=spr_kbpants_defeat
 mdlspr_down_look=spr_kbpants_lookd
 char="Burgerpants"
-kartwidth=7
-kartheight=15+z
+kartwidth=5
+kartheight=13.5+z
 kartbottom=0+z
 ability_sndplay=true
 scr_kartsettings_create()

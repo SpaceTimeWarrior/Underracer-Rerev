@@ -20,7 +20,7 @@ mdlspr_victory=spr_kundy_victory
 mdlspr_defeat=spr_kundy_defeat
 mdlspr_down_look=spr_kundy_lookd
 char="Undyne"
-kartwidth=7
+kartwidth=5
 kartheight=14+z
 kartbottom=0+z
 scr_kartsettings_create()

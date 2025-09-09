@@ -12,6 +12,7 @@ function scr_save_data() {
 			case rm_sandbox_snowdin1:
 			tc = "cmpn-snowdin";
 			break;
+			case rm_cmpn_hacking:
 			case rm_cmpn_hacked:
 			tc = "cmpn-hkd";
 			break;

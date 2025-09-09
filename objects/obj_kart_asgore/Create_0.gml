@@ -20,8 +20,8 @@ mdlspr_victory=spr_kasgore_victory
 mdlspr_defeat=spr_kasgore_defeat
 mdlspr_down_look=spr_kasgore_lookd
 char="Asgore"
-kartwidth=7
-kartheight=15+z
+kartwidth=5
+kartheight=14+z
 kartbottom=0+z
 scr_kartsettings_create()
 firespin=0

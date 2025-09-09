@@ -1,6 +1,8 @@
 image_alpha=0
 image_speed=0
 image_index=0
+image_xscale = 4;
+image_yscale = 4;
 global.startroom="Hacked"
 d3d_set_fog(false,c_black,10,global.renderdistance)
 d3d_end()

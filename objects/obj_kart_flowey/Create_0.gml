@@ -20,8 +20,8 @@ mdlspr_victory=spr_kflowey_victory
 mdlspr_defeat=spr_kflowey_defeat
 mdlspr_down_look=spr_kflowey_lookd
 char="Flowey"
-kartwidth=5
-kartheight=10+z
+kartwidth=3
+kartheight=9+z
 kartbottom=0+z
 scr_kartsettings_create()
 

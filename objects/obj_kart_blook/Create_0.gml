@@ -21,7 +21,7 @@ mdlspr_defeat=spr_kblook_defeat
 mdlspr_down_look=spr_kblook_lookd
 char="Napstablook"
 kartwidth=5
-kartheight=10+z
+kartheight=14+z
 kartbottom=0+z
 scr_kartsettings_create()
 

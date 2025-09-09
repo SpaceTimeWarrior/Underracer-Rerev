@@ -1,5 +1,5 @@
 if(keyboard_check_pressed(ord("Z"))){
-	instance_create_depth(x,y,depth,obj_slctkart_preview);
+	instance_create_depth(x,y,-99999,obj_slctkart_preview);
 	instance_destroy()
 }
 if position_meeting(mouse_x,mouse_y,obj_slct_flowey){
@@ -141,7 +141,7 @@ turn = 4;
 //turn 0-10
 if position_meeting(mouse_x,mouse_y,obj_slct_uf_papy){
 if instance_exists(obj_slct_uf_papy){
-if obj_slct_mewmew01.sprite_index!=spr_slct_nochar{
+if obj_slct_uf_papy.sprite_index!=spr_slct_nochar{
 global.preview_charname="UF!Papyrus"
 spd = 7.1;
 accel = 0.2;
@@ -151,6 +151,14 @@ if position_meeting(mouse_x,mouse_y,obj_slct_mewmew01){
 if instance_exists(obj_slct_mewmew01){
 if obj_slct_mewmew01.sprite_index!=spr_slct_nochar{
 global.preview_charname="Mad Mew Mew"
+spd = 7.1;
+accel = 0.2;
+turn = 4;
+}}}
+if position_meeting(mouse_x,mouse_y,obj_slct_mewmew02){
+if instance_exists(obj_slct_mewmew02){
+if obj_slct_mewmew02.sprite_index!=spr_slct_nochar{
+global.preview_charname="Christmas Mew Mew"
 spd = 7.1;
 accel = 0.2;
 turn = 4;

@@ -547,7 +547,7 @@ function scr_load_karts(){
 		custom_karts[iiii].kart_turn=ini_read_real(kname,"turn",custom_karts[iiii].kart_turn);
 		ini_write_real(kname,"turn",custom_karts[iiii].kart_turn);
 		var sprs = ini_read_string(kname,"right","./"+ckart+"friskr"+string(iiii)+".png");
-		var sprf = ini_read_real(kname,"rightf",1);
+		var sprf = ini_read_real(kname,"rightf", sprite_get_number(spr_kfrisk_r));
 		ini_write_string(kname,"right",sprs);
 		ini_write_real(kname,"rightf",sprf);
 		custom_karts[iiii].mdlspr_right=sprite_add(sprs,sprf,false,false,0,0);
@@ -557,7 +557,7 @@ function scr_load_karts(){
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_right,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"left","./"+ckart+"friskl"+string(iiii)+".png");
-		var sprf = ini_read_real(kname,"leftf",1);
+		var sprf = ini_read_real(kname,"leftf",sprite_get_number(spr_kfrisk_l));
 		ini_write_string(kname,"left",sprs);
 		ini_write_real(kname,"leftf",sprf);
 		custom_karts[iiii].mdlspr_left=sprite_add(sprs,sprf,false,false,0,0);
@@ -567,7 +567,7 @@ function scr_load_karts(){
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_left,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"down","./"+ckart+"friskd"+string(iiii)+".png");
-		var sprf = ini_read_real(kname,"downf",1);
+		var sprf = ini_read_real(kname,"downf",sprite_get_number(spr_kfrisk_d));
 		ini_write_string(kname,"down",sprs);
 		ini_write_real(kname,"downf",sprf);
 		custom_karts[iiii].mdlspr_down=sprite_add(sprs,sprf,false,false,0,0);
@@ -577,7 +577,7 @@ function scr_load_karts(){
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_down,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"up","./"+ckart+"frisku"+string(iiii)+".png");
-		var sprf = ini_read_real(kname,"upf",1);
+		var sprf = ini_read_real(kname,"upf",sprite_get_number(spr_kfrisk_u));
 		ini_write_string(kname,"up",sprs);
 		ini_write_real(kname,"upf",sprf);
 		custom_karts[iiii].mdlspr_up=sprite_add(sprs,sprf,false,false,0,0);
@@ -587,7 +587,7 @@ function scr_load_karts(){
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_up,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"stun","./"+ckart+"frisks"+string(iiii)+".png");
-		var sprf = ini_read_real(kname,"stunf",4);
+		var sprf = ini_read_real(kname,"stunf",sprite_get_number(spr_kfrisk_stun));
 		ini_write_string(kname,"stun",sprs);
 		ini_write_real(kname,"stunf",sprf);
 		custom_karts[iiii].mdlspr_stun=sprite_add(sprs,sprf,false,false,0,0);
@@ -597,7 +597,7 @@ function scr_load_karts(){
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_stun,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"victory","./"+ckart+"friskv"+string(iiii)+".png");
-		var sprf = ini_read_real(kname,"victoryf",5);
+		var sprf = ini_read_real(kname,"victoryf",sprite_get_number(spr_kfrisk_victory));
 		ini_write_string(kname,"victory",sprs);
 		ini_write_real(kname,"victoryf",sprf);
 		custom_karts[iiii].mdlspr_victory=sprite_add(sprs,sprf,false,false,0,0);
@@ -607,7 +607,7 @@ function scr_load_karts(){
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_victory,true, 0,0, 0,0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"defeat","./"+ckart+"friskdef"+string(iiii)+".png");
-		var sprf = ini_read_real(kname,"defeatf",12);
+		var sprf = ini_read_real(kname,"defeatf",sprite_get_number(spr_kfrisk_defeat));
 		ini_write_string(kname,"defeat",sprs);
 		ini_write_real(kname,"defeatf",sprf);
 		custom_karts[iiii].mdlspr_defeat=sprite_add(sprs,sprf,false,false,0,0);
@@ -617,7 +617,7 @@ function scr_load_karts(){
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_defeat,true, 0,0, 0, 0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"look","./"+ckart+"frisklkd"+string(iiii)+".png");
-		var sprf = ini_read_real(kname,"lookf",1);
+		var sprf = ini_read_real(kname,"lookf",sprite_get_number(spr_kfrisk_lookd));
 		ini_write_string(kname,"look",sprs);
 		ini_write_real(kname,"lookf",sprf);
 		custom_karts[iiii].mdlspr_down_look=sprite_add(sprs,sprf,false,false,0,0);
@@ -627,7 +627,7 @@ function scr_load_karts(){
 		}
 		sprite_collision_mask(custom_karts[iiii].mdlspr_down_look,true, 0,0, 0,0, 0, bboxkind_precise, 0)
 		var sprs = ini_read_string(kname,"select","./"+ckart+"asrielsel"+string(iiii)+".png");
-		var sprf = ini_read_real(kname,"selectf",2);
+		var sprf = ini_read_real(kname,"selectf",sprite_get_number(spr_slct_asriel));
 		ini_write_string(kname,"select",sprs);
 		ini_write_real(kname,"selectf",sprf);
 		custom_karts[iiii].selector = sprite_add(sprs,sprf,false,false,0,0);

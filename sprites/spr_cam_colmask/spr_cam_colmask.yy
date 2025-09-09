@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"colmasks",
-    "path":"folders/Sprites/colmasks.yy",
+    "path":"folders/Sprites/cutscenes/colmasks.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

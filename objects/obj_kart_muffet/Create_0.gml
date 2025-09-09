@@ -20,8 +20,8 @@ mdlspr_victory=spr_kmuffet_victory
 mdlspr_defeat=spr_kmuffet_defeat
 mdlspr_down_look=spr_kmuffet_lookd
 char="Muffet"
-kartwidth=7
-kartheight=15+z
+kartwidth=5.5
+kartheight=14+z
 kartbottom=0+z
 scr_kartsettings_create()
 

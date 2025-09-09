@@ -21,7 +21,7 @@ mdlspr_defeat=spr_ksans_defeat
 mdlspr_down_look=spr_ksans_lookd
 char="Sans"
 kartwidth=5
-kartheight=10+z
+kartheight=14+z
 kartbottom=0+z
 scr_kartsettings_create()
 

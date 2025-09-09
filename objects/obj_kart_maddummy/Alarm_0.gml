@@ -10,6 +10,7 @@ mdlspr_stun=spr_uf_papy_stun
 mdlspr_victory=spr_uf_papy_victory
 mdlspr_defeat=spr_uf_papy_defeat
 mdlspr_down_look=spr_uf_papy_lookd
+char = "UnderFell Papyrus"
 alarm[1]=1
 }
 if skin="Mad Mew Mew01"{
@@ -22,9 +23,10 @@ if skin="Mad Mew Mew01"{
 	mdlspr_victory=spr_mewmew_victory
 	mdlspr_defeat=spr_mewmew_defeat
 	mdlspr_down_look=spr_mewmew_lookd
+	char="Mad Mew Mew";
 	alarm[1]=1
 }
-if skin="Mad Mew Mew01"{
+if skin="Mad Mew Mew02"{
 	final_sprite=spr_mewmew_d_c
 	mdlspr_right=spr_mewmew_r_c
 	mdlspr_left=spr_mewmew_l_c
@@ -34,5 +36,6 @@ if skin="Mad Mew Mew01"{
 	mdlspr_victory=spr_mewmew_victory_c
 	mdlspr_defeat=spr_mewmew_defeat_c
 	mdlspr_down_look=spr_mewmew_lookd_c
+	char="Xmas Mew Mew";
 	alarm[1]=1
 }

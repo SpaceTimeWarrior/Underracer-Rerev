@@ -20,8 +20,8 @@ mdlspr_victory=spr_kpapy_victory
 mdlspr_defeat=spr_kpapy_defeat
 mdlspr_down_look=spr_kpapy_lookd
 char="Papyrus"
-kartwidth=7
-kartheight=14+z
+kartwidth=6
+kartheight=13+z
 kartbottom=0+z
 scr_kartsettings_create()
 

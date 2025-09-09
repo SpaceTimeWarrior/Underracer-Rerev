@@ -20,8 +20,8 @@ mdlspr_victory=spr_kalphys_victory
 mdlspr_defeat=spr_kalphys_defeat
 mdlspr_down_look=spr_kalphys_lookd
 char="Alphys"
-kartwidth=5
-kartheight=10+z
+kartwidth=6
+kartheight=14+z
 kartbottom=0+z
 scr_kartsettings_create()
 

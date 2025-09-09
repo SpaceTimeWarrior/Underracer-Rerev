@@ -1,5 +1,5 @@
 if(keyboard_check_pressed(ord("Z"))){
-	instance_create_depth(x,y,depth,obj_slctk_stats);
+	instance_create_depth(x,y,-99999,obj_slctk_stats);
 	instance_destroy()
 }
 if position_meeting(mouse_x,mouse_y,obj_slct_flowey){
@@ -110,6 +110,12 @@ if instance_exists(obj_slct_mewmew01){
 if obj_slct_mewmew01.sprite_index!=spr_slct_nochar{
 global.preview_charname="Mad Mew Mew"
 sprite_index=spr_mewmew_d
+}}}
+if position_meeting(mouse_x,mouse_y,obj_slct_mewmew02){
+if instance_exists(obj_slct_mewmew02){
+if obj_slct_mewmew02.sprite_index!=spr_slct_nochar{
+global.preview_charname="Christmas Mew Mew"
+sprite_index=spr_mewmew_d_c
 }}}
 
 if position_meeting(mouse_x,mouse_y,obj_slct_ss_chara){

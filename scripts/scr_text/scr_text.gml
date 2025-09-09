@@ -94,6 +94,15 @@ function scr_textdraw() {
 	}
 	else 
 	draw_text_transformed(myx + (random(shake)-(shake/2)), myy + (random(shake)-(shake/2)), string_hash_to_newline(myletter),1.5,1.5,0) 
+	switch(font){
+	case fnt_hud:
+	case fnt_hud_big:
+	case fnt_papyrus:
+	case fnt_sans:
+	case fnt_wd:
+	
+	}
+	
 	myx = (myx + spacing);
 	}
 	draw_set_color(c_black); 

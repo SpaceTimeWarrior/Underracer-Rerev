@@ -26,8 +26,8 @@ mdlspr_victory=spr_kfrisk_victory
 mdlspr_defeat=spr_kfrisk_defeat
 mdlspr_down_look=spr_kfrisk_lookd
 char="Frisk"
-kartwidth=5
-kartheight=10+z
+kartwidth=4.5
+kartheight=14+z
 kartbottom=0+z
 scr_kartsettings_create()
 

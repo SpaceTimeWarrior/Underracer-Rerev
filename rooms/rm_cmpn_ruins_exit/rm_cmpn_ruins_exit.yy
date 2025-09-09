@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_cmpn_ruins_exit",
-  "creationCodeFile":"${project_dir}/rooms/rm_cmpn_ruins_exit/RoomCreationCode.gml",
+  "creationCodeFile":"rooms/rm_cmpn_ruins_exit/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -363,11 +363,13 @@
     {"name":"inst_113354F6","path":"rooms/rm_cmpn_ruins_exit/rm_cmpn_ruins_exit.yy",},
     {"name":"inst_32151E39","path":"rooms/rm_cmpn_ruins_exit/rm_cmpn_ruins_exit.yy",},
     {"name":"inst_35D2C48","path":"rooms/rm_cmpn_ruins_exit/rm_cmpn_ruins_exit.yy",},
+    {"name":"inst_6EE48C3E","path":"rooms/rm_cmpn_ruins_exit/rm_cmpn_ruins_exit.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Compatibility_Instances_Depth_-10","depth":-10,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_6E5F86B3","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E5F86B3","objectId":{"name":"obj_kart_toriel","path":"objects/obj_kart_toriel/obj_kart_toriel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":176.0,},
+    {"$GMRInstanceLayer":"","%Name":"Compatibility_Instances_Depth_-10","depth":-10,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v2","%Name":"inst_6E5F86B3","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E5F86B3","objectId":{"name":"obj_kart_toriel","path":"objects/obj_kart_toriel/obj_kart_toriel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":208.0,},
+        {"$GMRInstance":"v2","%Name":"inst_6EE48C3E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6EE48C3E","objectId":{"name":"obj_portal_Fake_1","path":"objects/obj_portal_Fake_1/obj_portal_Fake_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":208.0,},
       ],"layers":[],"name":"Compatibility_Instances_Depth_-10","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Compatibility_Instances_Depth_-1","depth":-1,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":2,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_96C8C338","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_96C8C338","objectId":{"name":"obj_wall_home_vert","path":"objects/obj_wall_home_vert/obj_wall_home_vert.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":176.0,},

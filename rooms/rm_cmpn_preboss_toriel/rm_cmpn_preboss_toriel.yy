@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_cmpn_preboss_toriel",
-  "creationCodeFile":"${project_dir}/rooms/rm_cmpn_preboss_toriel/RoomCreationCode.gml",
+  "creationCodeFile":"rooms/rm_cmpn_preboss_toriel/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

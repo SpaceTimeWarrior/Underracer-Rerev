@@ -1,3 +1,8 @@
+if(instance_exists(obj_reset_location)){
+		other.x = obj_reset_location.x;
+		other.y = obj_reset_location.y;
+}
+
 if other.z<2{
 other.fall=true
 if !sound_isplaying(snd_fall){sound_2play(snd_fall)}
