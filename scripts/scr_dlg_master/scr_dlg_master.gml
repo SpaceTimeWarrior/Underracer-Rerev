@@ -5,7 +5,7 @@ function scr_dlg_master(dlgt=0,dlg2 = 0){
 		default:
 		switch(dlgt){//this tells which dialog to get
 			case -1://title update info
-				return "UnderRacer 2016 v.0.59 / Press C to see Game Info and Credits."+"\n FanReRevivalUpdate 2022-2024 V.0.4.80";
+				return "UnderRacer 2016 v.0.59 / Press C to see Game Info and Credits."+"\n FanReRevivalUpdate 2022-2025 V0.0.4.96.120";
 				break;
 			case 0://obj_dlg_alwaysfacing
 				return "* Weird how it's always&facing you, right?";
@@ -669,6 +669,34 @@ function scr_dlg_master(dlgt=0,dlg2 = 0){
 					return "* Enjoy!/"
 				}
 				break;
+			case 60://obj_dlg_introflowey3
+				if(dlg2 = 0){
+					return "*Hello again!&I guess i don't need&to introduce myself&again, do i?/"
+				}else if(dlg2 = 1){
+					return "*Just follow me, buddy.&...wait how many times&are you going to reset?/"
+				}
+			break;
+			case 61://obj_dlg_introflowey4
+				if(dlg2 = 0){
+					return "*Hello again!&this is getting old&lets just say I won/"
+				}else if(dlg2 = 1){
+					return "*because it is&clear that the&number of resets&mean I won all/"
+				}
+			break;
+			case 62://obj_dlg_introflowey5
+				if(dlg2 = 0){
+					return "*Hello again!&sorry about last time&but you just keep coming/"
+				}else if(dlg2 = 1){
+					return "*Just follow me, buddy/"
+				}
+			break;
+			case 63://obj_dlg_introflowey6
+			if(dlg2 = 0){
+					return "*Hello again!&seriously how many&times are you going to &reset/"
+				}else if(dlg2 = 1){
+					return "*Just follow me, buddy&wait is that a dog&in the distance/"
+				}
+			break;
 		}
 	}
 }

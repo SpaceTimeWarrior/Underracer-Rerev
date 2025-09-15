@@ -37,7 +37,7 @@ function scr_load_data() {
 		ini_open("Save.determination")//load new filetype
 		global.gold=ini_read_real("Campaign","Gold",0);
 		global.startroom=ini_read_string("Main","start","");
-		var tc = ini_read_string("Campaign","Room","");
+		var tc = ini_read_string("Campaign","Room","flowey check");
 		switch(tc){
 			case "cmpn-ruins":
 			global.cmpn_room = rm_sandbox_ruins1;
@@ -47,6 +47,9 @@ function scr_load_data() {
 			break;
 			case "cmpn-hkd":
 			global.cmpn_room = rm_cmpn_hacked;
+			break;
+			case "flowey check":
+			global.cmpn_room = rm_cmpgn_tutorial1;
 			break;
 			default:
 			global.cmpn_room = rm_error;
@@ -72,8 +75,10 @@ function scr_load_data() {
 		global.unlock_toriel=ini_read_real("Main","BUTTS_PIE",0); 
 		global.unlock_blook=ini_read_real("Main","...",0);  
 		global.unlock_ss_chara=ini_read_real("Main","storyswap chara",0); 
-		global.renderdistance=ini_read_real("Main","rend",0);  
+		global.renderdistance=ini_read_real("Main","rend",360); 
+		ini_write_real("Main","rend",global.renderdistance);
 		global.musicvolume=ini_read_real("Main","music",0);  
+		ini_write_real("Main","music",global.musicvolume);
 		global.controlinput=ini_read_real("Main","inp",0);  
 		global.lighting=ini_read_real("Main","light",0);  
 		global.lighting_quantity=ini_read_real("Main","light_q",0); 

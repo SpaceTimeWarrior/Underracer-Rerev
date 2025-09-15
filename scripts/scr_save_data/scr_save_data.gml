@@ -4,20 +4,29 @@ function scr_save_data() {
 	ini_open("Save.determination")
 		ini_write_real("Campaign","Gold",global.gold);
 		ini_write_string("Main","start",global.startroom);
-		var tc;
-		switch(global.cmpn_room){
-			case rm_sandbox_ruins1:
-			tc = "cmpn-ruins";
-			break;
-			case rm_sandbox_snowdin1:
-			tc = "cmpn-snowdin";
-			break;
-			case rm_cmpn_hacking:
-			case rm_cmpn_hacked:
-			tc = "cmpn-hkd";
-			break;
-			default:
-			tc = rm_error;
+		if(!global.gamemode=="Campaign"){
+			var tc = ini_read_string("Campaign","Room","flowey check");
+			ini_write_string("Campaign","Room",tc);
+		}else{
+			var tc;
+			switch(global.cmpn_room){
+				case rm_sandbox_ruins1:
+				tc = "cmpn-ruins";
+				break;
+				case rm_sandbox_snowdin1:
+				tc = "cmpn-snowdin";
+				break;
+				case rm_cmpn_hacking:
+				case rm_cmpn_hacked:
+				tc = "cmpn-hkd";
+				break;
+				case rm_cmpgn_tutorial1:
+				case rm_cmpgn_tutorial2:
+				tc = "flowey check"
+				break;
+				default:
+				tc = rm_error;
+			}
 		}
 		ini_write_string("Campaign","Room",tc);
 		ini_write_real("Campaign","times",global.cmpn_times);// How many times campaign was completed
@@ -65,7 +74,9 @@ function scr_save_data() {
 		ini_write_real("Campaign","undyne_water",campaign_undyne_waterpump);
 		ini_write_real("Campaign","Doggo_battle",battle_dog);
 		ini_write_real("Campaign","spider tires",campaign_tires_r);
-		ini_write_real("Campaign","snowdin unlock",sndnunlk);
+		ini_write_real("Campaign","snowdin unlock",sndnunlk); 
+		ini_write_real("Main","rend",global.renderdistance);
+		ini_write_real("Main","music",global.musicvolume);
 		ini_close();
 	}catch(_e){
 		file=file_text_open_write("save.ini")
